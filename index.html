@@ -1,0 +1,3058 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en" class="no-js">
+<script>
+/* The invitation is locked to the Bengali palette in dark mode, applied
+   before first paint so there is no flash. Nothing is read from storage:
+   every visit opens the same way, in English. */
+(function(){
+  document.documentElement.setAttribute('data-theme','dark');
+})();
+</script>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Susmita &amp; Rohit | Wedding &mdash; 5 December 2026</title>
+<meta name="description" content="Susmita Basak and Rohit Mukherjee are getting married in Kolkata on 4 and 5 December 2026. Mehendi, Sangeet, Haldi and the wedding ceremony.">
+<meta name="theme-color" content="#fbf6ee">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Su&#9825;Ro &mdash; We're getting married">
+<meta property="og:description" content="4 &amp; 5 December 2026 &middot; Kolkata. Mehendi, Sangeet, Haldi and the wedding ceremony.">
+<meta property="og:url" content="https://rohitmukh97.github.io/Wedding_Invite/">
+<meta property="og:image" content="https://rohitmukh97.github.io/Wedding_Invite/assets/img/share-card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="1200">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="Susmita and Rohit - finally, we're getting married. December 2026, Kolkata.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://rohitmukh97.github.io/Wedding_Invite/assets/img/share-card.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbf6ee'/%3E%3Cpath d='M16 6 C21 11, 21 21, 16 26 C11 21, 11 11, 16 6 Z' fill='none' stroke='%23a4161a' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='16' r='2' fill='%23c79a3a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Cinzel:wght@400;500;600&family=Montserrat:wght@300;400;500&family=Pinyon+Script&family=Noto+Serif+Bengali:wght@400;500;600&family=Great+Vibes&family=Hind+Siliguri:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+/* =========================================================
+   Susmita & Rohit - 4 & 5 December 2026 - Kolkata
+   Two palettes (Bengali Wedding / Premium Mauve)
+   x two modes (light / dark). All four combinations valid.
+   ========================================================= */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+
+/* ---------- PALETTE A: Bengali Wedding (default) ---------- */
+:root{
+  --bg:#fdf8f0; --bg-2:#f7efdf; --bg-3:#fffaf3;
+  --ink:#26120f; --ink-2:#4a332a; --ink-3:#7a6252;
+  --accent:#9d0f18; --accent-l:#c2494e; --accent-d:#5e0d18; --accent-wash:#f4d8d2;
+  --gold:#bf8f2c; --gold-l:#e0bd6a; --gold-wash:#f9e9c4;
+  --leaf:#5a7636; --leaf-l:#9aab72;
+  --line:#e6d3b2;
+  --glow:rgba(157,15,24,.3);
+  --shadow:rgba(38,18,15,.16);
+  --band-a:#5e0d18; --band-b:#9d0f18;
+  --rose-a:201,60,80; --rose-b:214,92,110; --rose-k:1;
+}
+[data-theme="dark"]{
+  --bg:#190d0e; --bg-2:#21110f; --bg-3:#291614;
+  --ink:#f6e8d6; --ink-2:#d6c2a8; --ink-3:#9b8574;
+  --accent:#e8807b; --accent-l:#a24f4a; --accent-d:#f5a09a; --accent-wash:#3c1d1c;
+  --gold:#e6c273; --gold-l:#bb9542; --gold-wash:#33260f;
+  --leaf:#a3b673; --leaf-l:#75854a;
+  --line:#432722;
+  --glow:rgba(232,128,123,.28);
+  --shadow:rgba(0,0,0,.55);
+  --band-a:#451215; --band-b:#7d2b28;
+  --rose-a:228,104,118; --rose-b:240,138,152; --rose-k:1.5;
+}
+/* ---------- PALETTE B: Premium Mauve ---------- */
+[data-palette="mauve"]{
+  --bg:#f5f0f6; --bg-2:#efe9f2; --bg-3:#f8f2f7;
+  --ink:#2a2029; --ink-2:#4c4050; --ink-3:#7b6f83;
+  --accent:#8e6e96; --accent-l:#b394b8; --accent-d:#43213f; --accent-wash:#e8dfea;
+  --gold:#c9a961; --gold-l:#ddc48c; --gold-wash:#f4ecd9;
+  --leaf:#8a7c9c; --leaf-l:#b4aac2;
+  --line:#ded3e2;
+  --glow:rgba(142,110,150,.26);
+  --shadow:rgba(42,32,41,.14);
+  --band-a:#43213f; --band-b:#8e6e96;
+  --rose-a:150,96,160; --rose-b:178,126,184; --rose-k:1;
+}
+[data-palette="mauve"][data-theme="dark"]{
+  --bg:#17101a; --bg-2:#1d1522; --bg-3:#231829;
+  --ink:#eee5f0; --ink-2:#c8bcd0; --ink-3:#8f8598;
+  --accent:#c9a2d0; --accent-l:#8a6d92; --accent-d:#dcbde0; --accent-wash:#2a1f2e;
+  --gold:#d7b871; --gold-l:#a98f4e; --gold-wash:#2a2418;
+  --leaf:#b0a4c8; --leaf-l:#79708c;
+  --line:#332740;
+  --glow:rgba(201,162,208,.24);
+  --shadow:rgba(0,0,0,.5);
+  --band-a:#2c1930; --band-b:#5c3f63;
+  --rose-a:190,134,200; --rose-b:208,160,216; --rose-k:1.5;
+}
+
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:var(--bg); color:var(--ink);
+  font-family:'Montserrat',-apple-system,BlinkMacSystemFont,sans-serif;
+  font-size:16px; font-weight:300; line-height:1.75;
+  overflow-x:hidden;
+  transition:background .9s ease,color .9s ease;
+}
+img,video,svg{max-width:100%;display:block}
+.wrap{width:min(880px,100% - 44px);margin-inline:auto}
+
+/* Warm the paper so it reads as card stock rather than flat cream.
+   Bengali only - mauve wants to stay cool. */
+html:not([data-palette="mauve"]) body{
+  background-image:
+    radial-gradient(ellipse 92% 55% at 50% 0%,var(--gold-wash),transparent 62%),
+    radial-gradient(ellipse 78% 48% at 50% 100%,var(--accent-wash),transparent 62%);
+  background-attachment:fixed;
+}
+
+/* garad band - the red-and-gold woven border of a Bengali wedding saree */
+.garad{
+  height:13px;width:100%;position:relative;
+  background:
+    repeating-linear-gradient(90deg,transparent 0 8px,rgba(255,255,255,.18) 8px 9px),
+    linear-gradient(180deg,var(--band-a),var(--band-b) 45%,var(--band-a));
+  box-shadow:inset 0 1px 0 var(--gold-l),inset 0 -1px 0 var(--gold-l);
+}
+
+/* ---------- the song, drawn under the ribbon ----------
+   The ribbon itself stays perfectly still - it is a woven band and it looked
+   wrong made to dance. The music lives in a soft glow just beneath it instead:
+   a slow, blurred curve that swells and settles, closer to candlelight on the
+   cloth than to an equaliser. */
+.wave-wrap{
+  position:relative;height:0;margin-top:-2px;pointer-events:none;overflow:hidden;
+  opacity:0;
+  transition:height .78s cubic-bezier(.32,.9,.28,1),opacity .62s ease;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent);
+}
+/* .open is the toggle - the strip grows out from under the ribbon.
+   .lit is the music - it fades the glow in only once there is sound. */
+.wave-wrap.open{height:50px}
+.wave-wrap.open.lit{opacity:1}
+.wave-wrap.open:not(.lit){opacity:.35}
+.wave-wrap canvas{display:block;width:100%;height:50px}
+@media(prefers-reduced-motion:reduce){.wave-wrap{display:none}}
+
+
+.garad::after{
+  content:"";position:absolute;inset:0;
+  background:repeating-linear-gradient(90deg,
+    transparent 0 22px,var(--gold-l) 22px 23px,transparent 23px 30px);
+  opacity:.5;
+}
+
+/* gold-foil lettering with a slow shimmer */
+@supports ((-webkit-background-clip:text) or (background-clip:text)){
+  .names,.closing-hash{
+    background-image:linear-gradient(100deg,
+      var(--accent-d) 0%,var(--accent) 20%,var(--gold) 38%,var(--gold-l) 50%,
+      var(--gold) 62%,var(--accent) 80%,var(--accent-d) 100%);
+    background-size:230% 100%;
+    -webkit-background-clip:text;background-clip:text;
+    -webkit-text-fill-color:transparent;color:transparent;
+    animation:foil 11s ease-in-out infinite;
+  }
+  .names em{-webkit-text-fill-color:transparent}
+}
+@keyframes foil{
+  0%,100%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+}
+
+/* large alpona watermark behind the hero */
+.hero-mark{
+  position:absolute;top:44%;left:50%;
+  width:min(620px,132vw);aspect-ratio:1;
+  transform:translate(-50%,-50%);
+  color:var(--gold);opacity:.085;pointer-events:none;z-index:0;
+  animation:spin 260s linear infinite;
+}
+[data-theme="dark"] .hero-mark{opacity:.13}
+.hero .wrap{position:relative;z-index:1}
+
+/* bilingual: both strings ship, CSS shows one */
+html[data-lang="en"] .bn{display:none!important}
+html[data-lang="bn"] .en{display:none!important}
+html[data-lang="bn"] body{font-family:'Hind Siliguri',sans-serif;line-height:1.9}
+
+/* =========================================================
+   CONTROLS (shared by intro and main page)
+   ========================================================= */
+.ctl-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:14px}
+.ctl{
+  position:relative;
+  width:48px;height:48px;padding:0;
+  display:inline-flex;align-items:center;justify-content:center;
+  color:var(--ink-2);
+  background:transparent;
+  border:1px solid var(--line);border-radius:50%;
+  cursor:pointer;
+  -webkit-tap-highlight-color:transparent;
+  transition:color .55s ease,border-color .55s ease,background .55s ease,
+             box-shadow .55s ease,transform .45s cubic-bezier(.22,.61,.36,1);
+}
+/* the hairline that makes it read as an engraved medallion */
+.ctl::after{
+  content:"";position:absolute;inset:3px;border-radius:50%;
+  border:1px solid var(--gold);opacity:.3;pointer-events:none;
+  transition:opacity .55s ease,border-color .55s ease;
+}
+.ctl svg{width:25px;height:25px;display:block}
+.ctl:hover,.ctl:focus-visible{transform:translateY(-2px);border-color:var(--accent-l)}
+.ctl:hover::after{opacity:.65}
+
+/* One palette toggle. Like the sun/moon and the অ/A, it shows the look you
+   are switching TO, drawn in that palette's own colour as a preview. */
+.ctl-palette svg{
+  position:absolute;
+  transition:opacity .75s ease,transform .75s cubic-bezier(.22,.61,.36,1);
+}
+.ctl-palette .ico-gem{color:#8e6e96}
+.ctl-palette .ico-rosette{color:#a4161a;opacity:0;transform:rotate(-40deg) scale(.7)}
+[data-theme="dark"] .ctl-palette .ico-gem{color:#c9a2d0}
+[data-theme="dark"] .ctl-palette .ico-rosette{color:#e0736f}
+[data-palette="mauve"] .ctl-palette .ico-gem{opacity:0;transform:rotate(40deg) scale(.7)}
+[data-palette="mauve"] .ctl-palette .ico-rosette{opacity:1;transform:none}
+
+/* day / night crossfade, driven purely by the theme attribute */
+/* ---------- the visuals toggle ----------
+   One mark, not two: the wave relaxes into a straight line rather than being
+   crossed out, which reads as "settled" instead of "broken". */
+.ctl-viz svg{position:absolute;overflow:visible}
+.ctl-viz .v-wave,.ctl-viz .v-flat{
+  transition:opacity .5s ease,transform .6s cubic-bezier(.32,.9,.28,1);
+  transform-origin:12px 12px;
+}
+.ctl-viz .v-flat{opacity:1}
+.ctl-viz .v-wave{opacity:0;transform:scaleY(.28)}
+.ctl-viz.is-on .v-flat{opacity:0;transform:scaleY(.4)}
+.ctl-viz.is-on .v-wave{opacity:1;transform:none}
+.ctl-viz.is-on{color:var(--gold);border-color:var(--gold-l)}
+
+/* ---------- the sound toggle ----------
+   One icon, not two: the waves fade out and the cross fades in, so the button
+   never changes size or jumps. */
+.ctl-sound .wave,.ctl-sound .mute-x{transition:opacity .45s ease,transform .45s cubic-bezier(.22,.61,.36,1)}
+.ctl-sound .mute-x{opacity:0;transform:scale(.6);transform-origin:18px 12px}
+.ctl-sound.is-off .wave{opacity:0;transform:translateX(3px) scale(.7);transform-origin:14px 12px}
+.ctl-sound.is-off .mute-x{opacity:1;transform:none}
+.ctl-sound.is-on{color:var(--gold);border-color:var(--gold-l)}
+/* a slow pulse on the outer wave while the song is actually playing, so the
+   button reads as live rather than as a setting */
+.ctl-sound.is-on .wave-2{animation:soundPulse 2.6s ease-in-out infinite}
+@keyframes soundPulse{0%,100%{opacity:1}50%{opacity:.35}}
+@media(prefers-reduced-motion:reduce){.ctl-sound.is-on .wave-2{animation:none}}
+
+.ctl-mode svg{position:absolute;transition:opacity .7s ease,transform .7s cubic-bezier(.22,.61,.36,1)}
+.ctl-mode .ico-moon{opacity:0;transform:rotate(-45deg) scale(.7)}
+[data-theme="dark"] .ctl-mode .ico-sun{opacity:0;transform:rotate(45deg) scale(.7)}
+[data-theme="dark"] .ctl-mode .ico-moon{opacity:1;transform:none}
+
+/* language: the glyph shows the script you are switching TO */
+.ctl-lang .glyph{
+  position:absolute;line-height:1;
+  transition:opacity .55s ease,transform .55s ease;
+}
+.ctl-lang .glyph-bn{font-family:'Noto Serif Bengali',serif;font-size:21px;font-weight:500}
+.ctl-lang .glyph-en{font-family:'Cinzel',serif;font-size:19px;font-weight:600;letter-spacing:.02em}
+html[data-lang="bn"] .ctl-lang .glyph-bn{opacity:0;transform:scale(.7)}
+html[data-lang="en"] .ctl-lang .glyph-en{opacity:0;transform:scale(.7)}
+
+/* =========================================================
+   INTRO SCREEN
+   ========================================================= */
+#intro{
+  position:fixed;inset:0;z-index:900;
+  display:flex;flex-direction:column;align-items:center;justify-content:flex-start;
+  /* Start-aligned, with auto margins on the first and last children doing the
+     centring. justify-content:center overflows symmetrically once content
+     outgrows the box; autos collapse to zero instead, so a short screen
+     degrades downward. padding-top reserves the toran, padding-bottom the
+     language button. Browser chrome takes ~180px of a phone's height, so a
+     "852px" iPhone really has about 669px to work with. */
+  padding:calc(112px + env(safe-area-inset-top)) 22px calc(84px + env(safe-area-inset-bottom));
+  background:radial-gradient(ellipse at 50% 38%,var(--bg-3),var(--bg) 62%);
+  transition:opacity 1.1s ease,visibility 0s 1.1s;
+}
+#intro.leaving{opacity:0;visibility:hidden;pointer-events:none}
+
+.intro-alpona{
+  position:absolute;top:50%;left:50%;
+  /* size and position are set in JS: it is centred on the seal, and small
+     enough to sit between the Ganesha group above and the invite lines below,
+     so nothing but the seal falls inside the ring */
+  aspect-ratio:1;
+  color:var(--gold);opacity:.42;pointer-events:none;
+  -webkit-mask-image:radial-gradient(ellipse 62% 62% at 50% 46%,#000 55%,transparent 88%);
+          mask-image:radial-gradient(ellipse 62% 62% at 50% 46%,#000 55%,transparent 88%);
+}
+.intro-alpona g{transform-origin:130px 130px}
+.intro-alpona .ring-a{animation:spin 220s linear infinite}
+.intro-alpona .ring-b{animation:spin 170s linear infinite reverse}
+.intro-alpona path,.intro-alpona circle{
+  stroke-dasharray:360;stroke-dashoffset:360;
+  animation:draw 3.2s cubic-bezier(.45,0,.2,1) forwards;
+}
+.intro-alpona .ring-a path:nth-of-type(2){animation-delay:.12s}
+.intro-alpona .ring-a path:nth-of-type(3){animation-delay:.24s}
+.intro-alpona .ring-a path:nth-of-type(4){animation-delay:.36s}
+.intro-alpona .ring-a path:nth-of-type(5){animation-delay:.48s}
+.intro-alpona .ring-a path:nth-of-type(6){animation-delay:.6s}
+.intro-alpona .ring-a path:nth-of-type(7){animation-delay:.72s}
+.intro-alpona .ring-a path:nth-of-type(8){animation-delay:.84s}
+.intro-alpona .ring-b path,.intro-alpona .ring-b circle{animation-delay:.45s}
+/* two-tone: gold outer, sindoor-red inner */
+.intro-alpona .ring-b path,.intro-alpona .ring-b circle{stroke:var(--accent);opacity:.8}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* The small lines sit over alpona petals and pulse rings. Stacked shadows in
+   the page colour knock a clean halo out around each glyph, so the decoration
+   can stay busy without the text becoming unreadable. */
+.intro-eyebrow,.ganesha-say,.intro-date,.intro-hint,.invite-lead{
+  text-shadow:
+    0 0 6px var(--bg),0 0 6px var(--bg),0 0 10px var(--bg),
+    0 0 16px var(--bg),0 0 26px var(--bg);
+}
+/* now part of the Ganesha group at the top of the screen */
+.intro-eyebrow{
+  position:relative;z-index:2;
+  font-size:10px;letter-spacing:.4em;text-transform:uppercase;
+  color:var(--ink-2);margin:9px 0 0;
+  animation:riseIn 1.1s ease-out both;
+}
+/* the invitation lines and the date, pinned to the lower part of the screen */
+.intro-lower{
+  position:relative;z-index:2;text-align:center;width:100%;
+  margin-bottom:auto;
+  /* full-width text block with nothing clickable in it: without this it sits
+     over the seated diyas and swallows their taps */
+  pointer-events:none;
+}
+html[data-lang="bn"] .intro-eyebrow{letter-spacing:.1em;text-transform:none;font-size:13px}
+
+/* the #SuRo mark IS the button - a wax seal you press */
+.suro-btn{
+  position:relative;z-index:2;overflow:hidden;
+  display:inline-flex;align-items:center;justify-content:center;
+  cursor:pointer;
+  padding:clamp(11px,2.8vw,19px) clamp(18px,4.6vw,33px);
+  border:1.5px solid var(--gold-l);
+  border-radius:50%;
+  background:
+    radial-gradient(ellipse 60% 55% at 38% 26%,rgba(255,255,255,.20),transparent 60%),
+    radial-gradient(ellipse 90% 90% at 50% 56%,var(--band-b),var(--band-a) 82%);
+  box-shadow:
+    inset 0 2px 7px rgba(255,255,255,.20),
+    inset 0 -8px 18px rgba(0,0,0,.32),
+    0 10px 26px var(--shadow);
+  animation:riseIn 1.3s cubic-bezier(.22,.61,.36,1) .15s both;
+  transition:transform .55s cubic-bezier(.22,.61,.36,1),box-shadow .55s ease;
+  -webkit-tap-highlight-color:transparent;
+}
+.suro-btn::after{                        /* hairline pressed into the wax */
+  content:"";position:absolute;inset:8px;border-radius:50%;
+  border:1px solid rgba(255,236,196,.34);pointer-events:none;
+}
+.suro-text{
+  position:relative;display:inline-block;
+  font-family:'Pinyon Script',cursive;
+  font-size:clamp(26px,7vw,48px);line-height:1;
+  letter-spacing:.01em;color:#f2dda2;
+  /* Pinyon Script's ink does not sit centred in its advance box - it rides
+     high. inline-block sorts the horizontal on its own; the vertical needs a
+     nudge. Measured on rendered pixels, in em so it scales with the clamp. */
+  transform:translate(-.04em,.055em);
+}
+@supports ((-webkit-background-clip:text) or (background-clip:text)){
+  .suro-text{
+    background-image:linear-gradient(100deg,#c69433 0%,#f0d795 28%,#fff6dc 50%,#f0d795 72%,#c69433 100%);
+    background-size:220% 100%;
+    -webkit-background-clip:text;background-clip:text;
+    -webkit-text-fill-color:transparent;color:transparent;
+    animation:foil 9s ease-in-out infinite;
+  }
+}
+.suro-btn .hash{font-family:'Cormorant Garamond',serif;font-size:.42em;margin-right:.04em;vertical-align:.42em;opacity:.9}
+.suro-btn:hover,.suro-btn:focus-visible{
+  transform:scale(1.035);
+  box-shadow:inset 0 2px 7px rgba(255,255,255,.24),inset 0 -8px 18px rgba(0,0,0,.3),0 14px 32px var(--shadow);
+}
+.suro-btn:active{transform:scale(.985)}
+
+/* the whole seal breathes, so it reads as something alive to press.
+   The bottom margin lifts it off centre, which buys the rotating ring room
+   now that the stacked names take up more of the lower half. */
+.suro-holder{margin:clamp(16px,6.4vh,58px) 0;animation:breathe 4.4s ease-in-out 1.9s infinite}
+@keyframes breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.028)}}
+
+/* rings pulsing outward from the seal - the tap affordance */
+.tap-ripple{
+  position:absolute;left:50%;top:50%;width:100%;height:100%;
+  border-radius:50%;border:1.5px solid rgba(var(--rose-a),.6);
+  transform:translate(-50%,-50%) scale(1.04);opacity:0;pointer-events:none;
+  animation:tapRipple 2.9s cubic-bezier(.2,.6,.3,1) 2.2s infinite;
+}
+.tap-ripple-2{animation-delay:3.65s}
+@keyframes tapRipple{
+  0%{opacity:0;transform:translate(-50%,-50%) scale(1.04)}
+  16%{opacity:.5}
+  100%{opacity:0;transform:translate(-50%,-50%) scale(1.42)}
+}
+
+/* press feedback - ink spreading from wherever the finger landed */
+.press-ink{
+  position:absolute;width:14px;height:14px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,240,205,.55),rgba(255,240,205,0) 70%);
+  transform:translate(-50%,-50%) scale(0);pointer-events:none;
+  animation:pressInk .62s ease-out forwards;
+}
+@keyframes pressInk{to{transform:translate(-50%,-50%) scale(16);opacity:0}}
+@keyframes riseIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+
+/* the lead-in shrinks right down so the names can dominate */
+.invite-lead{
+  position:relative;z-index:2;text-align:center;
+  font-family:'Montserrat',sans-serif;font-weight:400;
+  font-size:11px;letter-spacing:.19em;text-transform:uppercase;line-height:1.85;
+  color:var(--ink-3);margin:0 0 14px;
+  animation:riseIn 1.3s ease-out .3s both;
+}
+html[data-lang="bn"] .invite-lead{
+  font-family:'Hind Siliguri',sans-serif;
+  letter-spacing:.06em;text-transform:none;font-size:15px;
+}
+
+/* names stacked, so each gets the full width to itself */
+.invite-names{
+  position:relative;z-index:2;text-align:center;
+  display:flex;flex-direction:column;align-items:center;gap:2px;
+  animation:riseIn 1.3s ease-out .42s both;
+}
+/* Great Vibes is a formal script: it only ships one weight, its letterforms
+   are much smaller than the em box, and its ascenders and descenders are
+   long. So it needs a bigger size and a tighter line-height than a serif
+   would at the same nominal value. */
+.invite-names .nm{
+  font-family:'Great Vibes',cursive;
+  font-style:normal;font-weight:400;
+  font-size:clamp(40px,12.6vw,60px);
+  /* The line box must enclose the ink. background-clip:text paints the
+     gradient only inside the element's box, so a tight line-height on a
+     script with tall ascenders leaves the tops of the glyphs unpainted -
+     which reads as the letters being cut off. Negative margin pulls the
+     two names back together without shrinking the box. */
+  line-height:1.44;padding:.04em 0;margin:-.13em 0;
+  letter-spacing:.01em;color:var(--gold-l);
+}
+@supports ((-webkit-background-clip:text) or (background-clip:text)){
+  .invite-names .nm{
+    background-image:linear-gradient(100deg,#c69433 0%,#f0d795 30%,#fff6dc 50%,#f0d795 70%,#c69433 100%);
+    background-size:230% 100%;
+    -webkit-background-clip:text;background-clip:text;
+    -webkit-text-fill-color:transparent;color:transparent;
+    animation:foil 11s ease-in-out infinite;
+  }
+}
+/* Bengali stays upright: Noto Serif Bengali has no italic, so an italic
+   request would be synthesised as a slant, which is wrong for the script. */
+html[data-lang="bn"] .invite-names .nm{
+  font-family:'Noto Serif Bengali',serif;
+  font-style:normal;font-weight:500;
+  font-size:clamp(26px,8vw,39px);line-height:1.45;
+}
+
+/* the ampersand, flanked by two small buds */
+.invite-names .amp{
+  position:relative;display:flex;align-items:center;justify-content:center;
+  width:min(230px,62vw);height:22px;margin:3px 0;color:var(--gold);
+}
+.invite-names .amp-orn{position:absolute;inset:0;width:100%;height:100%;opacity:.75}
+.invite-names .amp-ch{
+  position:relative;
+  font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;
+  font-size:25px;line-height:1;color:var(--accent-d);
+  padding:0 9px;
+}
+html[data-lang="bn"] .invite-names .amp-ch{
+  font-family:'Noto Serif Bengali',serif;font-style:normal;font-size:19px;
+}
+.intro-date{
+  position:relative;z-index:2;
+  font-size:10px;letter-spacing:.34em;text-transform:uppercase;
+  color:var(--ink-3);margin-top:12px;
+  animation:riseIn 1.3s ease-out .42s both;
+}
+html[data-lang="bn"] .intro-date{letter-spacing:.06em;text-transform:none;font-size:14px}
+.intro-hint{
+  position:relative;z-index:2;
+  display:flex;align-items:center;justify-content:center;gap:7px;
+  font-family:'Montserrat',sans-serif;font-size:11px;font-weight:400;
+  letter-spacing:.2em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 16px;
+  animation:riseIn 1.3s ease-out .55s both,bob 2.8s ease-in-out 2.2s infinite;
+}
+.intro-hint svg{width:13px;height:13px;flex:0 0 auto}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+html[data-lang="bn"] .intro-hint{
+  font-family:'Hind Siliguri',sans-serif;
+  letter-spacing:.03em;text-transform:none;font-size:14px;
+}
+/* language sits alone at the very bottom, out of the vertical flow so the
+   rest of the intro can centre without it */
+/* Full width and centred by the flex row, not by translateX: riseIn ends on
+   transform:none, which would wipe out any transform used for centring. */
+.intro-ctl{
+  position:absolute;left:0;right:0;bottom:28px;
+  z-index:3;margin:0;
+  animation:riseIn 1.3s ease-out .68s both;
+  /* The row spans the full width, so its box sits over both seated diyas and
+     would swallow their taps. Only the button itself should be clickable. */
+  pointer-events:none;
+}
+.intro-ctl .ctl{pointer-events:auto}
+
+/* =========================================================
+   BENGALI SCENE - intro screen only
+   Toran, seated diyas, hanging diyas.
+   All CSS and inline SVG. No libraries.
+   ========================================================= */
+.scene{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:1}
+
+/* =========================================================
+   INTRO BACKGROUND - reddish-pink, behind everything.
+   Every keyframe animates transform or opacity only, so these
+   stay on the compositor. The one exception is the vine, which
+   animates stroke-dashoffset, and there are only two of those.
+   ========================================================= */
+.intro-bg{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+
+/* 1. drifting orbs - a living colour bed.
+   Soft-stopped gradients, not filter:blur(), which is expensive on old phones. */
+.orb{position:absolute;border-radius:50%;will-change:transform}
+.orb-1{
+  width:64vw;height:64vw;top:-10%;left:-16%;
+  background:radial-gradient(circle,rgba(var(--rose-a),calc(.20 * var(--rose-k))),rgba(var(--rose-a),calc(.09 * var(--rose-k))) 46%,transparent 72%);
+  animation:orbDrift 30s ease-in-out infinite;
+}
+.orb-2{
+  width:56vw;height:56vw;bottom:1%;right:-18%;
+  background:radial-gradient(circle,rgba(var(--rose-b),calc(.19 * var(--rose-k))),rgba(var(--rose-b),calc(.07 * var(--rose-k))) 46%,transparent 72%);
+  animation:orbDrift 37s ease-in-out infinite;animation-delay:-11s;
+}
+.orb-3{
+  width:48vw;height:48vw;top:40%;left:50%;
+  background:radial-gradient(circle,rgba(var(--rose-a),calc(.14 * var(--rose-k))),transparent 70%);
+  animation:orbDrift 43s ease-in-out infinite;animation-delay:-21s;
+}
+@keyframes orbDrift{
+  0%,100%{transform:translate(0,0) scale(1)}
+  33%{transform:translate(6vw,-5vh) scale(1.13)}
+  66%{transform:translate(-5vw,5vh) scale(.93)}
+}
+
+/* 2. rings swelling out from behind the monogram */
+.pulse{
+  position:absolute;top:44%;left:50%;
+  width:min(300px,74vw);aspect-ratio:1;border-radius:50%;
+  border:1.5px solid rgba(var(--rose-a),.5);
+  transform:translate(-50%,-50%) scale(.25);opacity:0;
+  animation:pulseOut 7.5s cubic-bezier(.2,.6,.3,1) infinite;
+}
+.pulse-2{animation-delay:2.5s}
+.pulse-3{animation-delay:5s}
+@keyframes pulseOut{
+  0%{opacity:0;transform:translate(-50%,-50%) scale(.25)}
+  14%{opacity:.42}
+  100%{opacity:0;transform:translate(-50%,-50%) scale(2.5)}
+}
+
+/* 3. silk sheen - an occasional sweep, not a perpetual animation */
+.silk{
+  position:absolute;top:-30%;left:-65%;width:58%;height:180%;
+  background:linear-gradient(105deg,transparent,
+    rgba(var(--rose-b),calc(.13 * var(--rose-k))) 40%,
+    rgba(255,235,240,calc(.20 * var(--rose-k))) 50%,
+    rgba(var(--rose-b),calc(.13 * var(--rose-k))) 60%,transparent);
+  animation:silkSweep 12s ease-in-out infinite;will-change:transform;
+}
+@keyframes silkSweep{
+  0%{transform:translateX(0) rotate(11deg);opacity:0}
+  9%{opacity:1}
+  56%{opacity:1}
+  72%,100%{transform:translateX(300%) rotate(11deg);opacity:0}
+}
+
+/* 4. sindoor dust, drifting up against the falling flowers */
+.dust{
+  position:absolute;bottom:-6%;border-radius:50%;opacity:0;
+  animation-name:dustRise;animation-timing-function:linear;animation-iteration-count:infinite;
+  will-change:transform;
+}
+@keyframes dustRise{
+  0%{opacity:0;transform:translate3d(0,0,0)}
+  14%{opacity:.5}
+  86%{opacity:.3}
+  100%{opacity:0;transform:translate3d(20px,-108vh,0)}
+}
+
+/* 5. jaba blooming and fading */
+.bloom{position:absolute;width:66px;opacity:0;animation:bloomIn 13s ease-in-out infinite}
+.bloom-1{top:22%;left:7%}
+.bloom-2{top:58%;right:8%;animation-delay:-4.4s}
+.bloom-3{top:78%;left:16%;animation-delay:-8.8s}
+@keyframes bloomIn{
+  0%,100%{opacity:0;transform:scale(.5) rotate(-12deg)}
+  12%{opacity:.3;transform:scale(1) rotate(0)}
+  30%{opacity:.3}
+  46%{opacity:0;transform:scale(1.18) rotate(9deg)}
+}
+
+/* 6. alpona vines creeping in along the edges, then erasing */
+.vine{position:absolute;top:0;height:100%;width:82px;color:rgba(var(--rose-a),.26)}
+.vine-l{left:0}
+.vine-r{right:0;transform:scaleX(-1)}
+.vine svg{width:100%;height:100%}
+.vine path{
+  stroke-dasharray:1500;stroke-dashoffset:1500;
+  animation:vineGrow 22s ease-in-out infinite;
+}
+.vine-r path{animation-delay:-8s}
+@keyframes vineGrow{
+  0%{stroke-dashoffset:1500}
+  42%,66%{stroke-dashoffset:0}
+  100%{stroke-dashoffset:-1500}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .orb,.pulse,.silk,.dust,.bloom,.vine path{animation:none}
+  .pulse,.silk,.dust{opacity:0}
+}
+
+/* --- garad bands framing the intro, same border as the invitation --- */
+.intro-band{position:absolute;left:0;right:0;z-index:3}
+.intro-band.top{top:0}
+.intro-band.bottom{bottom:0}
+
+/* --- Ganesha, top centre, the traditional place on a wedding card --- */
+/* In the flow, not absolute: the intro content is vertically centred, so an
+   absolutely-placed Ganesha collides with the eyebrow line on short screens. */
+/* The container must be full width, not icon width. The invocation is
+   nowrap and far wider than the icon, and an overflowing line box is not
+   recentred by text-align - it spills off the end edge instead. */
+/* Pinned just under the toran, so the middle of the screen belongs to the
+   seal alone. The invocation and eyebrow follow it up there. */
+.ganesha{
+  position:relative;z-index:2;text-align:center;
+  /* A fixed top margin, not auto. With auto on both ends the free space was
+     split evenly, so any change in the block BELOW the seal moved the seal -
+     switching to Bengali shortened the names and shifted it 15px. Anchoring
+     the top means the seal's position depends only on this block, whose
+     height is now equal in both languages. */
+  width:100%;margin:clamp(4px,3.2vh,36px) auto clamp(4px,1.4vh,14px);
+}
+.ganesha svg{width:clamp(62px,18vw,82px);margin:0 auto;color:var(--gold)}
+.ganesha .gj{stroke:var(--accent)}
+.ganesha .draw-in{
+  stroke-dasharray:300;stroke-dashoffset:300;
+  animation:draw 2.4s cubic-bezier(.45,0,.2,1) .3s forwards;
+}
+.ganesha .draw-in:nth-of-type(2n){animation-delay:.5s}
+.ganesha .draw-in:nth-of-type(3n){animation-delay:.72s}
+.ganesha-say{
+  margin-top:7px;
+  font-size:9px;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--accent);opacity:1;white-space:nowrap;
+  animation:riseIn 1.2s ease-out 1.5s both;
+}
+html[data-lang="bn"] .ganesha-say{
+  font-family:'Noto Serif Bengali',serif;
+  letter-spacing:.04em;text-transform:none;font-size:12px;
+}
+/* Scale the intro down as the usable height shrinks. Values are tuned
+   against measured content heights at each breakpoint, not guessed. */
+@media(max-height:780px){
+  #intro{padding-top:calc(92px + env(safe-area-inset-top));padding-bottom:calc(74px + env(safe-area-inset-bottom))}
+  .suro-holder{margin:clamp(12px,3.4vh,30px) 0}
+  .ganesha svg{width:clamp(54px,15vw,68px)}
+  .ganesha-say{font-size:8.5px;letter-spacing:.2em}
+  .ganesha-say-2{font-size:7.8px;min-height:17px;margin-top:0}
+  html[data-lang="bn"] .ganesha-say-2{font-size:10px;min-height:18px}
+  .hero-eyebrow,.intro-eyebrow{font-size:12px;letter-spacing:.28em;margin-bottom:0}
+  .invite-names .nm{font-size:clamp(30px,9.2vw,36px)}
+  .invite-lead{font-size:10px;letter-spacing:.15em;margin-bottom:8px}
+  .intro-date{margin-top:8px}
+  .intro-hint{margin-bottom:10px}
+}
+@media(max-height:700px){
+  #intro{padding-top:calc(86px + env(safe-area-inset-top));padding-bottom:calc(74px + env(safe-area-inset-bottom))}
+  .invite-names .nm{font-size:clamp(28px,8.6vw,36px);line-height:1.22}
+  .invite-names .amp{height:18px;margin:1px 0}
+  .invite-names .amp-ch{font-size:20px}
+  .suro-holder{margin:clamp(7px,2.7vh,21px) 0}
+}
+@media(max-height:620px){
+  #intro{padding-top:calc(78px + env(safe-area-inset-top));padding-bottom:calc(72px + env(safe-area-inset-bottom))}
+  .ganesha svg{width:clamp(46px,13vw,58px)}
+  .invite-names .nm{font-size:clamp(26px,8vw,32px);line-height:1.28}
+  .invite-names .amp{height:15px;margin:0}
+  .invite-names .amp-ch{font-size:18px}
+  .intro-hint{font-size:10px;margin-bottom:8px}
+  .intro-date{font-size:9px;margin-top:6px}
+  .suro-text{font-size:clamp(23px,6.2vw,32px)}
+  .suro-btn{padding:9px 16px}
+  .suro-holder{margin:clamp(5px,1.7vh,13px) 0}
+  .intro-ctl{bottom:16px}
+}
+@media(max-height:560px){
+  #intro{padding-top:calc(50px + env(safe-area-inset-top));padding-bottom:calc(46px + env(safe-area-inset-bottom))}
+  .ganesha svg{width:44px}
+  .ganesha-say{font-size:8px}
+  .ganesha-say-2{font-size:7.4px;min-height:15px}
+  html[data-lang="bn"] .ganesha-say-2{font-size:9.5px;min-height:16px}
+  .invite-names .nm{font-size:22px}
+  .invite-lead{font-size:9px;margin-bottom:6px}
+  .suro-text{font-size:22px}
+  .suro-holder{margin:clamp(8px,2.6vh,18px) 0}
+}
+/* Very old handsets (iPhone SE 1, 360x640 Android): drop the invocation and
+   the tap hint rather than let the block run under the language button. */
+@media(max-height:500px){
+  #intro{padding-top:52px;padding-bottom:calc(62px + env(safe-area-inset-bottom))}
+  .ganesha-say{display:none}
+  .intro-hint{display:none}
+  .ganesha svg{width:40px}
+  .invite-names .nm{font-size:22px}
+  .intro-ctl{bottom:12px}
+}
+/* A phone held sideways has almost no height: keep the seal, the names and
+   the date, drop the supporting lines. */
+@media(max-height:440px){
+  #intro{padding-top:42px;padding-bottom:calc(52px + env(safe-area-inset-bottom))}
+  .ganesha-say,.intro-hint,.invite-lead{display:none}
+  .ganesha svg{width:36px}
+  .hero-eyebrow,.intro-eyebrow{font-size:10px;letter-spacing:.22em}
+  .invite-names .nm{font-size:20px;line-height:1.22}
+  .invite-names .amp{height:13px;margin:0}
+  .invite-names .amp-ch{font-size:16px}
+  .intro-date{font-size:8.5px;margin-top:5px}
+  .suro-text{font-size:19px}
+  .suro-btn{padding:7px 13px}
+  .suro-holder{margin:clamp(6px,2vh,14px) 0}
+  .intro-ctl{bottom:9px}
+}
+
+/* --- shankha and pola, the bride's bangles, ringing the monogram --- */
+.suro-holder{position:relative;z-index:2;display:inline-flex;align-items:center;justify-content:center}
+.sp-ring{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  border-radius:50%;pointer-events:none;
+}
+/* the bangles ring the seal from outside, so they must exceed 100% */
+.sp-shankha{
+  width:116%;height:130%;
+  border:3px solid #fdfaf4;
+  box-shadow:0 0 0 1px var(--accent-wash),inset 0 0 0 1px var(--accent-wash),0 2px 12px rgba(0,0,0,.06);
+}
+.sp-pola{
+  width:107%;height:115%;
+  border:2px solid var(--accent);opacity:.62;
+  box-shadow:0 0 18px -6px var(--glow);
+}
+[data-theme="dark"] .sp-shankha{border-color:#e3d6c2;border-width:2.5px;opacity:.72}
+
+
+/* --- diyas: irregular flicker, because a smooth pulse reads as fake --- */
+@keyframes glowPulse{0%,100%{opacity:.72;transform:scale(1)}50%{opacity:1;transform:scale(1.09)}}
+
+/* --- hanging diyas in the top corners: a different lamp from the seated
+       pair at the bottom - suspended on chains, swinging from the ring --- */
+.hdiya{
+  position:absolute;top:11.5%;width:50px;z-index:2;
+  transform-origin:50% 6%;
+  animation:hdSwing 5.2s ease-in-out infinite;
+}
+.hdiya-l{left:4.5%}
+.hdiya-r{right:4.5%;animation-duration:6.1s;animation-delay:-1.8s}
+.hdiya .flame{
+  transform-box:fill-box;transform-origin:50% 100%;
+  animation:flicker 2.1s ease-in-out infinite;
+}
+.hdiya-r .flame{animation-duration:1.8s;animation-delay:-.6s}
+@keyframes hdSwing{
+  0%,100%{transform:rotate(-5deg)}
+  50%{transform:rotate(5deg)}
+}
+.hdiya-glow{
+  /* anchored to the lamp's own 11.5% so the light stays on the flame at
+     any viewport height; an independent 15.5% drifted 55px low on desktop */
+  position:absolute;top:calc(11.5% - 14px);width:84px;height:84px;border-radius:50%;
+  background:radial-gradient(circle,rgba(240,168,64,.30),transparent 68%);
+  animation:glowPulse 2.1s ease-in-out infinite;
+}
+.hdiya-glow.hgl{left:calc(4.5% - 17px)}
+.hdiya-glow.hgr{right:calc(4.5% - 17px);animation-duration:1.8s;animation-delay:-.6s}
+
+/* =========================================================
+   TAP REACTIONS - the four lamps and Ganesha answer a tap
+   ========================================================= */
+.diya,.hdiya{pointer-events:auto;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.diya::after,.hdiya::after{content:"";position:absolute;inset:-14px;border-radius:16px}
+.diya{transform-origin:50% 88%}
+
+/* 1. flare - the flame swells and throws embers */
+.diya.r-flare .flame,.hdiya.r-flare .flame{animation:flareUp .95s cubic-bezier(.2,.8,.3,1)}
+@keyframes flareUp{
+  0%{transform:scale(1,1)}
+  14%{transform:scale(2,2.7) translateY(-4px)}
+  34%{transform:scale(.72,1.28)}
+  54%{transform:scale(1.35,.86)}
+  74%{transform:scale(.9,1.12)}
+  100%{transform:scale(1,1)}
+}
+/* a brief wash of light thrown by the flare */
+.flash{
+  position:absolute;left:50%;top:34%;width:190px;height:190px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,214,130,.55),rgba(255,190,90,.16) 42%,transparent 70%);
+  transform:translate(-50%,-50%) scale(.3);opacity:0;pointer-events:none;
+  animation:flashOut .75s cubic-bezier(.2,.7,.3,1) forwards;
+}
+@keyframes flashOut{
+  0%{opacity:.95;transform:translate(-50%,-50%) scale(.3)}
+  100%{opacity:0;transform:translate(-50%,-50%) scale(1.9)}
+}
+/* 2. swing - hanging lamps pendulum, seated lamps rock */
+.hdiya.r-swing{animation:swingHard 1.15s cubic-bezier(.25,.7,.3,1)}
+@keyframes swingHard{
+  0%{transform:rotate(-5deg)}16%{transform:rotate(27deg)}36%{transform:rotate(-21deg)}
+  56%{transform:rotate(14deg)}74%{transform:rotate(-9deg)}88%{transform:rotate(4deg)}
+  100%{transform:rotate(-5deg)}
+}
+.diya.r-swing{animation:rockHard 1s cubic-bezier(.25,.7,.3,1)}
+@keyframes rockHard{
+  0%,100%{transform:rotate(0)}
+  18%{transform:rotate(-14deg)}42%{transform:rotate(11deg)}64%{transform:rotate(-6deg)}84%{transform:rotate(2.5deg)}
+}
+/* 3. puff out, a beat of dark, then catch again */
+.diya.r-relight .flame,.hdiya.r-relight .flame{animation:relight 1.5s ease-in-out}
+@keyframes relight{
+  0%{transform:scale(1,1);opacity:1}
+  16%{transform:scale(.55,.25);opacity:.45}
+  26%{transform:scale(.08,.05);opacity:0}
+  56%{transform:scale(.08,.05);opacity:0}
+  72%{transform:scale(1.25,1.45);opacity:1}
+  100%{transform:scale(1,1);opacity:1}
+}
+/* 4. a ring of light spreading out */
+.tap-ring{
+  position:absolute;left:50%;top:46%;width:26px;height:26px;border-radius:50%;
+  border:1.5px solid var(--gold-l);pointer-events:none;
+  transform:translate(-50%,-50%) scale(.4);opacity:0;
+  animation:tapRingOut .9s cubic-bezier(.2,.7,.3,1) forwards;
+}
+@keyframes tapRingOut{
+  0%{opacity:1;transform:translate(-50%,-50%) scale(.3)}
+  100%{opacity:0;transform:translate(-50%,-50%) scale(8.5)}
+}
+.ember{
+  position:absolute;left:50%;top:38%;width:4px;height:4px;border-radius:50%;
+  background:var(--gold-l);pointer-events:none;opacity:0;
+  animation:emberUp .95s ease-out forwards;
+}
+@keyframes emberUp{
+  0%{opacity:1;transform:translate(-50%,0) scale(1)}
+  100%{opacity:0;transform:translate(calc(-50% + var(--ex)),var(--ey)) scale(.25)}
+}
+/* 5. petals dropping from the lamp */
+.tap-petal{
+  position:absolute;left:50%;top:52%;width:13px;height:13px;
+  pointer-events:none;opacity:0;
+  animation:tapPetalFall 1.5s cubic-bezier(.4,.1,.7,1) forwards;
+}
+@keyframes tapPetalFall{
+  0%{opacity:1;transform:translate(-50%,0) rotate(0)}
+  100%{opacity:0;transform:translate(calc(-50% + var(--ex)),var(--ey)) rotate(340deg)}
+}
+
+/* ---------- Ganesha ----------
+   .ganesha spans the full width, so only the medallion itself takes taps -
+   otherwise its box would swallow taps meant for the hanging lamps. */
+.ganesha{pointer-events:none}
+.gan-wrap{
+  position:relative;display:inline-block;
+  width:clamp(62px,18vw,82px);
+  pointer-events:auto;cursor:pointer;-webkit-tap-highlight-color:transparent;
+}
+.gan-wrap::after{content:"";position:absolute;inset:-12px;border-radius:50%}
+.gan-wrap>svg{width:100%;overflow:visible}
+
+.ganesha .g-trunk{transform-box:view-box;transform-origin:40px 41px}
+.ganesha.g-wiggle .g-trunk{animation:trunkWiggle 1.15s cubic-bezier(.35,.1,.3,1)}
+@keyframes trunkWiggle{
+  0%,100%{transform:rotate(0)}
+  15%{transform:rotate(-26deg)}36%{transform:rotate(21deg)}
+  56%{transform:rotate(-14deg)}74%{transform:rotate(8deg)}88%{transform:rotate(-3deg)}
+}
+.ganesha .g-ear{transform-box:view-box}
+.ganesha .g-ear-l{transform-origin:27px 37px}
+.ganesha .g-ear-r{transform-origin:53px 37px}
+.ganesha.g-ears .g-ear-l,.ganesha.g-ears .g-ear-r{animation:earFlap .85s ease-in-out}
+@keyframes earFlap{
+  0%,100%{transform:scaleX(1)}
+  28%{transform:scaleX(.6)}
+  58%{transform:scaleX(1.14)}
+  80%{transform:scaleX(.94)}
+}
+/* idle: a small ear flap every couple of seconds, quieter than the tap one */
+.ganesha.g-idleflap .g-ear-l,.ganesha.g-idleflap .g-ear-r{animation:earIdle .8s ease-in-out}
+@keyframes earIdle{
+  0%,100%{transform:scaleX(1)}
+  34%{transform:scaleX(.86)}
+  68%{transform:scaleX(1.04)}
+}
+.ganesha.g-bounce .gan-wrap>svg{animation:ganBounce .85s cubic-bezier(.3,1.5,.5,1)}
+@keyframes ganBounce{
+  0%,100%{transform:scale(1) rotate(0)}
+  18%{transform:scale(1.26,.78) rotate(-3deg)}
+  42%{transform:scale(.86,1.2) rotate(2deg)}
+  64%{transform:scale(1.1,.94) rotate(-1deg)}
+  84%{transform:scale(.97,1.03) rotate(0)}
+}
+.gan-glow{
+  position:absolute;left:50%;top:50%;width:100%;aspect-ratio:1;border-radius:50%;
+  background:radial-gradient(circle,rgba(240,200,110,.75),rgba(240,200,110,.18) 45%,transparent 70%);
+  transform:translate(-50%,-50%) scale(.35);opacity:0;pointer-events:none;
+  animation:ganGlow 1.15s cubic-bezier(.25,.7,.3,1) forwards;
+}
+@keyframes ganGlow{
+  0%{opacity:0;transform:translate(-50%,-50%) scale(.3)}
+  18%{opacity:1}
+  100%{opacity:0;transform:translate(-50%,-50%) scale(4.2)}
+}
+.gan-spark{
+  position:absolute;left:50%;top:50%;width:7px;height:7px;pointer-events:none;opacity:0;
+  animation:ganSpark 1s ease-out forwards;
+}
+.gan-spark::before{
+  content:"";position:absolute;inset:0;background:var(--gold-l);
+  clip-path:polygon(50% 0,58% 42%,100% 50%,58% 58%,50% 100%,42% 58%,0 50%,42% 42%);
+}
+@keyframes ganSpark{
+  0%{opacity:1;transform:translate(-50%,-50%) rotate(0) scale(.4)}
+  100%{opacity:0;transform:translate(calc(-50% + var(--ex)),calc(-50% + var(--ey))) rotate(140deg) scale(1.1)}
+}
+.gan-modak{
+  position:absolute;left:50%;bottom:-4px;width:28px;height:28px;
+  pointer-events:none;opacity:0;
+  animation:modakPop 1.6s cubic-bezier(.25,1.4,.5,1) forwards;
+}
+@keyframes modakPop{
+  0%{opacity:0;transform:translate(-50%,8px) scale(.4)}
+  22%{opacity:1;transform:translate(-50%,-18px) scale(1.14)}
+  38%{transform:translate(-50%,-12px) scale(1)}
+  74%{opacity:1;transform:translate(-50%,-14px) scale(1)}
+  100%{opacity:0;transform:translate(-50%,-26px) scale(.92)}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .diya,.hdiya,.gan-wrap{cursor:default}
+}
+
+/* --- toran: mango leaves and marigolds strung across the top --- */
+.toran{position:absolute;top:13px;left:0;width:100%;height:104px}
+.toran svg{width:100%;height:100%}
+/* These must sit after the base .toran rule: at equal specificity the later
+   declaration wins, so an earlier media query silently loses. */
+@media(max-height:780px){.toran{height:92px}}
+@media(max-height:700px){.toran{height:84px}}
+@media(max-height:620px){.toran{height:70px}}
+@media(max-height:560px){.toran{height:58px}}
+@media(max-height:500px){.toran{height:46px}}
+@media(max-height:440px){.toran{height:38px}}
+.toran .hang{
+  transform-box:fill-box;transform-origin:50% 0%;
+  animation:sway 4.8s ease-in-out infinite;
+}
+.toran .hang:nth-of-type(2n){animation-duration:5.7s;animation-delay:-.9s}
+.toran .hang:nth-of-type(3n){animation-duration:6.4s;animation-delay:-1.8s}
+.toran .hang:nth-of-type(5n){animation-duration:5.2s;animation-delay:-2.6s}
+@keyframes sway{0%,100%{transform:rotate(-3.4deg)}50%{transform:rotate(3.4deg)}}
+
+/* --- diyas: irregular flicker, because a smooth pulse reads as fake --- */
+.diya{position:absolute;bottom:4.5%;width:62px;z-index:2}
+.diya-l{left:6%}
+.diya-r{right:6%}
+.diya .flame{
+  transform-box:fill-box;transform-origin:50% 100%;
+  animation:flicker 1.9s ease-in-out infinite;
+}
+.diya-r .flame{animation-duration:2.3s;animation-delay:-.7s}
+@keyframes flicker{
+  0%  {transform:scale(1,1)      skewX(0)      translateX(0)}
+  11% {transform:scale(.94,1.09) skewX(-3.5deg) translateX(-.6px)}
+  26% {transform:scale(1.05,.93) skewX(2.5deg)  translateX(.7px)}
+  39% {transform:scale(.97,1.12) skewX(-2deg)   translateX(-.4px)}
+  54% {transform:scale(1.02,.96) skewX(3.5deg)  translateX(.6px)}
+  68% {transform:scale(.93,1.07) skewX(-1deg)   translateX(-.5px)}
+  83% {transform:scale(1.04,.95) skewX(1.5deg)  translateX(.4px)}
+  100%{transform:scale(1,1)      skewX(0)      translateX(0)}
+}
+.diya-glow{
+  position:absolute;bottom:calc(4.5% - 20px);width:112px;height:112px;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(224,150,50,.22),transparent 66%);
+  animation:glowPulse 1.9s ease-in-out infinite;
+}
+[data-theme="dark"] .diya-glow{
+  width:150px;height:150px;bottom:calc(4.5% - 39px);
+  background:radial-gradient(circle,rgba(240,168,64,.42),transparent 68%);
+}
+.diya-glow.gl{left:calc(6% - 25px)}
+.diya-glow.gr{right:calc(6% - 25px);animation-duration:2.3s;animation-delay:-.7s}
+[data-theme="dark"] .diya-glow.gl{left:calc(6% - 44px)}
+[data-theme="dark"] .diya-glow.gr{right:calc(6% - 44px)}
+@keyframes glowPulse{0%,100%{opacity:.72;transform:scale(1)}50%{opacity:1;transform:scale(1.09)}}
+
+/* --- kulo, the winnowing tray used to welcome the groom --- */
+.kulo{
+  position:absolute;left:4%;top:12%;width:74px;color:var(--gold);
+  transform-origin:50% 90%;
+  animation:kuloTilt 5.4s ease-in-out infinite;
+}
+.kulo .kj{stroke:var(--accent)}
+@keyframes kuloTilt{
+  0%,100%{transform:rotate(-4deg)}
+  50%{transform:rotate(4deg)}
+}
+
+/* --- topor, the groom's shola-pith crown --- */
+.topor{
+  position:absolute;right:4.5%;top:11.5%;width:56px;color:var(--gold);
+  animation:toporBob 4.8s ease-in-out infinite;
+}
+.topor .tj{stroke:var(--accent)}
+@keyframes toporBob{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-5px)}
+}
+
+/* --- topor and mukut, rising into place above the monogram --- */
+.crowns{
+  position:relative;z-index:2;
+  width:clamp(120px,32vw,168px);
+  color:var(--gold);opacity:.9;
+  margin:0 auto 26px;  /* clear of the bangle ring, which sits ~20px above the seal */
+  animation:crownRise 1.5s cubic-bezier(.22,.61,.36,1) .5s both;
+}
+@keyframes crownRise{
+  0%{opacity:0;transform:translateY(14px) scale(.94)}
+  100%{opacity:.9;transform:none}
+}
+
+@media(max-height:700px){
+  .hdiya,.hdiya-glow{display:none}
+  .diya{width:52px}
+}
+@media(prefers-reduced-motion:reduce){
+  .toran .hang,.diya .flame,.diya-glow,.hdiya,.hdiya .flame,.hdiya-glow{animation:none}
+}
+
+/* =========================================================
+   THE 3 SECOND OPENING - A DRAPE PARTING
+   0.00-0.25s  the drape is there (veil fades in fast)
+   0.50-1.00s  the seal stamps onto the seam
+   1.50-2.65s  the halves anticipate, then sweep apart
+   3.00s       invitation revealed, veil clears
+   ========================================================= */
+#veil{
+  position:fixed;inset:0;z-index:950;
+  overflow:hidden;
+  opacity:0;visibility:hidden;
+  transition:opacity .45s ease,visibility 0s .45s;
+}
+#veil.on{opacity:1;visibility:visible;transition:opacity .1s ease}
+/* Dropping .on to hide the veil un-matches every "#veil.on ..." animation
+   below, so the drapes lose their forwards end-state and snap back to
+   covering the screen - the closed curtain then flashes for the length of the
+   fade. .on stays put; this fades the whole layer out instead. Must sit after
+   the .on rule: same specificity, so the later one wins. */
+#veil.done{opacity:0;visibility:hidden;pointer-events:none;
+  transition:opacity .4s ease,visibility 0s .4s}
+
+/* the two halves */
+.drape{
+  /* Exactly half each. At 50.6% the two halves overlapped by 1.2% and the
+     right drape (painted last) put its gold hem at 49.4%, so the seam sat
+     visibly left of centre and off the seal's axis. */
+  position:absolute;top:0;bottom:0;width:50%;
+  background:
+    repeating-linear-gradient(90deg,transparent 0 11px,rgba(230,194,115,.09) 11px 12px),
+    linear-gradient(180deg,var(--band-a) 0%,#5d1a1c 42%,#4d1417 72%,var(--band-a) 100%);
+  box-shadow:0 0 34px rgba(0,0,0,.62);
+  will-change:transform;
+}
+.drape::after{                       /* gold hem down the leading edge */
+  content:"";position:absolute;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,var(--gold-l),var(--gold),var(--gold-l));
+  opacity:.85;
+}
+.drape-l{left:0}
+.drape-l::after{right:0}
+.drape-r{right:0}
+.drape-r::after{left:0}
+/* The halves sweep in from the sides, meet at the centre, then part. Fading
+   the drape in made it appear from nowhere; closing it first gives the tap a
+   consequence and reads as a curtain. */
+#veil.on .drape-l{animation:sweepInL .6s cubic-bezier(.3,.8,.3,1) both,
+                            drapeL 1.15s cubic-bezier(.55,0,.25,1) 1.5s forwards}
+#veil.on .drape-r{animation:sweepInR .6s cubic-bezier(.3,.8,.3,1) both,
+                            drapeR 1.15s cubic-bezier(.55,0,.25,1) 1.5s forwards}
+@keyframes sweepInL{from{transform:translateX(-100%)}to{transform:translateX(0)}}
+@keyframes sweepInR{from{transform:translateX(100%)}to{transform:translateX(0)}}
+@keyframes drapeL{
+  0%{transform:translateX(0)}
+  13%{transform:translateX(3.5%)}      /* a breath of anticipation before it goes */
+  100%{transform:translateX(-102%)}
+}
+@keyframes drapeR{
+  0%{transform:translateX(0)}
+  13%{transform:translateX(-3.5%)}
+  100%{transform:translateX(102%)}
+}
+
+/* the marigold swag hanging across the top of the drape */
+.veil-swag{position:absolute;top:0;left:0;right:0;height:74px;pointer-events:none}
+.veil-swag svg{width:100%;height:100%;display:block}
+#veil.on .veil-swag{animation:swagDrop .5s cubic-bezier(.3,1.2,.5,1) .45s both,
+                            swagUp .95s cubic-bezier(.55,0,.25,1) 1.5s forwards}
+@keyframes swagDrop{from{transform:translateY(-110%)}to{transform:translateY(0)}}
+@keyframes swagUp{to{opacity:0;transform:translateY(-104%)}}
+
+/* the seal, stamped onto the seam */
+.veil-stamp{
+  position:absolute;left:50%;top:50%;z-index:2;
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:clamp(11px,2.8vw,19px) clamp(18px,4.6vw,33px);
+  border:1.5px solid var(--gold-l);border-radius:50%;
+  background:
+    radial-gradient(ellipse 60% 55% at 38% 26%,rgba(255,255,255,.20),transparent 60%),
+    radial-gradient(ellipse 90% 90% at 50% 56%,var(--band-b),var(--band-a) 82%);
+  box-shadow:inset 0 2px 7px rgba(255,255,255,.20),inset 0 -8px 18px rgba(0,0,0,.32),0 12px 30px rgba(0,0,0,.5);
+  opacity:0;transform:translate(-50%,-50%) scale(2.4);
+}
+#veil.on .veil-stamp{
+  animation:stampOn .48s cubic-bezier(.25,1.5,.5,1) .72s both,
+            stampOff .4s ease 1.62s forwards;
+}
+@keyframes stampOn{
+  0%{opacity:0;transform:translate(-50%,-50%) scale(2.4) rotate(-8deg)}
+  55%{opacity:1}
+  78%{transform:translate(-50%,-50%) scale(.9) rotate(1deg)}
+  100%{opacity:1;transform:translate(-50%,-50%) scale(1) rotate(0)}
+}
+@keyframes stampOff{to{opacity:0;transform:translate(-50%,-50%) scale(1.12)}}
+
+/* a ring of light thrown out by the stamp landing */
+.veil-shock{
+  position:absolute;left:50%;top:50%;z-index:1;
+  width:120px;height:120px;border-radius:50%;
+  border:1.5px solid var(--gold-l);
+  opacity:0;transform:translate(-50%,-50%) scale(.3);
+}
+#veil.on .veil-shock{animation:shock .8s cubic-bezier(.2,.7,.3,1) 1.14s forwards}
+@keyframes shock{
+  0%{opacity:.85;transform:translate(-50%,-50%) scale(.3)}
+  100%{opacity:0;transform:translate(-50%,-50%) scale(3.4)}
+}
+
+/* Bengali renders these two lines about 12px taller than English. Without a
+   reserved height the Ganesha block grows and pushes the seal down when the
+   language is switched - 23px on a laptop. Fixed minimums keep it still. */
+.ganesha-say{min-height:23px}
+/* The card carries two invocations. The second sits tight under the first and
+   reserves less height - stacking them at full size pushed the date line into
+   the language button on every screen under about 670px. */
+.ganesha-say-2{margin-top:1px;min-height:19px;font-size:8.2px;opacity:.92}
+html[data-lang="bn"] .ganesha-say-2{font-size:11px;min-height:21px}
+.intro-eyebrow{min-height:25px}
+/* Same reasoning for the lines below the seal: Bengali renders each of these
+   taller, and without a reserved height every line under them slides down
+   when the language is switched. Values are the measured taller of the two. */
+/* Rather than reserve the taller language everywhere (which cost ~28px and
+   pushed the block into the language button), tighten Bengali's leading on
+   these single lines so the two scripts land at nearly the same height. */
+html[data-lang="bn"] .intro-hint{line-height:1.35}
+html[data-lang="bn"] .intro-date{line-height:1.35}
+html[data-lang="bn"] .invite-lead{line-height:1.45}
+.intro-hint{min-height:20px}
+.intro-date{min-height:20px}
+/* No reservation on the lead-in: it wraps to two lines in English but one in
+   Bengali, so reserving the English height cost Bengali 10px and pushed the
+   date under the language button on four devices. */
+/* The names block is deliberately NOT height-reserved. Great Vibes and Noto
+   Serif Bengali have genuinely different line boxes, and reserving the taller
+   cost up to 52px - more than a short phone has, and it pushed the date under
+   the language button on 12 of 18 device profiles. Everything above the names
+   is stable; only the date line still shifts when the language changes. */
+.invite-names{justify-content:center}
+
+@media(prefers-reduced-motion:reduce){
+  #veil.on .drape-l,#veil.on .drape-r,#veil.on .veil-swag,#veil.on .veil-shock,
+  #veil.on .veil-stamp,#veil.on .veil-shock{animation:none}
+  #veil.on .veil-stamp{opacity:1;transform:translate(-50%,-50%) scale(1)}
+}
+
+/* =========================================================
+   MAIN INVITATION
+   ========================================================= */
+.bar{
+  position:sticky;top:0;z-index:80;
+  display:flex;justify-content:center;
+  padding:10px 14px;
+  background:var(--bg);
+  border-bottom:1px solid var(--line);
+}
+@supports (backdrop-filter:blur(4px)){
+  .bar{
+    background:color-mix(in srgb,var(--bg) 86%,transparent);
+    backdrop-filter:saturate(1.15) blur(10px);
+    -webkit-backdrop-filter:saturate(1.15) blur(10px);
+  }
+}
+.bar .ctl-row{gap:11px}
+.bar .ctl{width:41px;height:41px}
+.bar .ctl svg{width:21px;height:21px}
+.bar .ctl-lang .glyph-bn{font-size:18px}
+.bar .ctl-lang .glyph-en{font-size:16px}
+
+section{padding:clamp(62px,11vw,110px) 0;position:relative}
+.band{background:var(--bg-2)}
+
+.orn{margin:0 auto 16px;width:150px;color:var(--gold);opacity:.7}
+.kicker{
+  text-align:center;font-size:10px;letter-spacing:.36em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:12px;
+}
+html[data-lang="bn"] .kicker{letter-spacing:.08em;text-transform:none;font-size:14px}
+.h2{
+  text-align:center;font-family:'Cormorant Garamond',serif;font-weight:400;
+  font-size:clamp(29px,6.2vw,46px);line-height:1.2;margin-bottom:34px;
+}
+.h2 em{font-style:italic;color:var(--accent)}
+html[data-lang="bn"] .h2{font-family:'Noto Serif Bengali',serif;font-weight:500;line-height:1.45}
+.lede{
+  text-align:center;max-width:56ch;margin:0 auto;
+  font-family:'Cormorant Garamond',serif;font-size:clamp(18px,4vw,21px);
+  line-height:1.85;color:var(--ink-2);
+}
+html[data-lang="bn"] .lede{font-family:'Hind Siliguri',sans-serif;font-size:16px}
+
+/* hero */
+/* The mandala behind the names is 132vw wide and spins, and a rotating square
+   sweeps a bounding box up to 1.41x its size - so it pushed the document wider
+   than the screen, by an amount that CHANGED as it turned. Android Chrome
+   reacts to a page wider than the viewport by zooming out and left-aligning it,
+   which is why the invitation could come up offset and only look right after a
+   reload. Clipping it to its own section keeps the page exactly viewport-wide.
+   The mark is decorative at 8.5% opacity, so nothing is lost by trimming it. */
+.hero{text-align:center;padding-top:clamp(48px,9vw,86px);overflow:hidden}
+/* Shubho Bibaho: the line that names the occasion, so it carries weight
+   rather than sitting back like a caption */
+.hero-eyebrow{
+  font-size:14px;letter-spacing:.34em;text-transform:uppercase;
+  font-weight:400;color:var(--gold);margin-bottom:20px;
+  text-shadow:0 0 6px var(--bg),0 0 12px var(--bg),0 0 22px var(--bg);
+}
+html[data-lang="bn"] .hero-eyebrow{
+  font-family:'Noto Serif Bengali',serif;font-weight:500;
+  letter-spacing:.06em;text-transform:none;font-size:19px;
+}
+.names{
+  font-family:'Cormorant Garamond',serif;font-weight:400;
+  font-size:clamp(44px,12.5vw,102px);line-height:1.03;
+}
+.names em{font-style:italic;color:var(--accent);font-size:.66em;padding:0 .06em}
+html[data-lang="bn"] .names{font-family:'Noto Serif Bengali',serif;font-weight:500;font-size:clamp(34px,10vw,78px);line-height:1.3}
+.names-sub{margin-top:16px;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-3)}
+html[data-lang="bn"] .names-sub{letter-spacing:.05em;text-transform:none;font-size:15px}
+.hero-when{
+  margin-top:26px;font-family:'Cinzel',serif;font-weight:500;
+  font-size:clamp(14px,3.2vw,18px);letter-spacing:.14em;color:var(--accent-d);
+}
+html[data-lang="bn"] .hero-when{font-family:'Noto Serif Bengali',serif;letter-spacing:.02em}
+
+/* framed portrait */
+.portrait{position:relative;width:min(292px,66vw);margin:0 auto}
+.portrait img{
+  width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;
+  border-radius:200px 200px 8px 8px;
+  box-shadow:0 20px 46px var(--shadow);
+}
+.portrait::before{
+  content:"";position:absolute;inset:-13px;
+  border:1px solid var(--gold);opacity:.55;
+  border-radius:212px 212px 14px 14px;pointer-events:none;
+}
+
+/* story */
+
+/* dates */
+/* countdown, inside the date frame */
+.cd [hidden],.cd[hidden]{display:none!important}
+.date-summary{
+  font-family:'Cormorant Garamond',serif;font-size:16px;line-height:1.85;
+  color:var(--ink-2);margin-top:4px;
+}
+.date-summary b{font-weight:500;color:var(--gold-l)}
+html[data-lang="bn"] .date-summary{font-family:'Hind Siliguri',sans-serif;font-size:14px;line-height:2}
+.cd-rule{width:70%;height:1px;background:var(--line);margin:18px auto 16px}
+.cd-cells{display:flex;justify-content:center;gap:10px}
+.cd-cell{
+  min-width:78px;padding:11px 10px 9px;
+  border:1px solid var(--line);border-radius:3px;background:rgba(255,255,255,.03);
+}
+.cd-cell b{
+  display:block;font-family:'Cormorant Garamond',serif;font-weight:500;
+  font-size:32px;line-height:1;color:var(--accent);font-variant-numeric:tabular-nums;
+}
+.cd-cell i{
+  display:block;margin-top:5px;font-style:normal;
+  font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3);
+}
+html[data-lang="bn"] .cd-cell i{letter-spacing:.04em;text-transform:none;font-size:12px}
+.cd-togo{font-size:9px;letter-spacing:.3em;text-transform:uppercase;color:var(--ink-3);margin-top:12px}
+html[data-lang="bn"] .cd-togo{letter-spacing:.06em;text-transform:none;font-size:13px}
+.cd-big{
+  font-family:'Great Vibes',cursive;
+  font-size:clamp(25px,7.2vw,33px);line-height:1.3;color:var(--gold-l);
+}
+html[data-lang="bn"] .cd-big{font-family:'Noto Serif Bengali',serif;font-size:clamp(18px,5.2vw,23px);line-height:1.5}
+.cd-sub{font-size:9px;letter-spacing:.26em;text-transform:uppercase;color:var(--accent);margin-top:7px}
+.cd-sub-quiet{color:var(--ink-3)}
+html[data-lang="bn"] .cd-sub{letter-spacing:.05em;text-transform:none;font-size:13px}
+.date-frame{
+  position:relative;width:min(430px,100% - 44px);margin:0 auto;
+  border:1px solid var(--line);padding:30px 24px;text-align:center;background:var(--bg-3);
+}
+.date-frame::before,.date-frame::after{
+  content:"";position:absolute;width:26px;height:26px;border:1px solid var(--gold);
+}
+.date-frame::before{top:-1px;left:-1px;border-right:0;border-bottom:0}
+.date-frame::after{bottom:-1px;right:-1px;border-left:0;border-top:0}
+.date-day{font-size:10px;letter-spacing:.34em;text-transform:uppercase;color:var(--ink-3)}
+html[data-lang="bn"] .date-day{letter-spacing:.06em;text-transform:none;font-size:14px}
+.date-main{display:flex;align-items:center;justify-content:center;gap:18px;margin:12px 0 10px}
+.date-mon{font-family:'Cinzel',serif;font-size:clamp(17px,4vw,22px);letter-spacing:.1em;color:var(--accent-d)}
+.date-yr{font-size:10px;letter-spacing:.4em;color:var(--ink-3);margin-top:4px}
+/* The Bengali calendar date from the printed card. English gets it
+   transliterated so the English screen stays English; the Bengali script
+   itself only appears once the language is switched. */
+.date-bengali{font-family:'Cormorant Garamond',serif;font-size:14px;color:var(--gold-l);
+  text-align:center;margin-top:2px;letter-spacing:.02em}
+html[data-lang="bn"] .date-bengali{font-family:'Noto Serif Bengali',serif;font-size:13.5px;letter-spacing:0}
+.date-num{font-family:'Cormorant Garamond',serif;font-size:clamp(40px,11vw,62px);line-height:1;color:var(--accent);white-space:nowrap}
+.date-rule{width:1px;height:56px;background:var(--line)}
+html[data-lang="bn"] .date-mon{font-family:'Noto Serif Bengali',serif}
+
+/* venues + events cards */
+.cards{display:grid;gap:16px;grid-template-columns:1fr;max-width:760px;margin:0 auto}
+@media(min-width:700px){.cards{grid-template-columns:1fr 1fr}}
+.card{
+  padding:28px 24px;text-align:center;
+  background:var(--bg-3);border:1px solid var(--line);border-radius:4px;
+  transition:transform .4s ease,box-shadow .4s ease;
+}
+.card:hover{transform:translateY(-3px);box-shadow:0 16px 34px var(--shadow)}
+.card-ico{width:42px;margin:0 auto 14px;color:var(--gold)}
+.card-for{font-size:9px;letter-spacing:.26em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+html[data-lang="bn"] .card-for{letter-spacing:.04em;text-transform:none;font-size:13px}
+.card-name{font-family:'Cormorant Garamond',serif;font-size:clamp(22px,4.6vw,28px);line-height:1.25;margin-bottom:6px}
+html[data-lang="bn"] .card-name{font-family:'Noto Serif Bengali',serif;font-weight:500}
+.card-sub{font-size:14px;color:var(--ink-3);margin-bottom:6px}
+.card-time{font-family:'Cinzel',serif;font-size:14px;letter-spacing:.08em;color:var(--accent-d);margin-bottom:10px}
+html[data-lang="bn"] .card-time{font-family:'Noto Serif Bengali',serif;letter-spacing:0}
+.card-note{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;color:var(--ink-2);max-width:34ch;margin:0 auto 16px}
+html[data-lang="bn"] .card-note{font-family:'Hind Siliguri',sans-serif;font-style:normal;font-size:14px}
+.venue-qr{display:block;margin:18px auto 0;width:120px;text-decoration:none}
+.venue-qr img{
+  width:120px;height:120px;display:block;
+  padding:8px;border-radius:8px;
+  background:#fdf8f0;border:1px solid var(--line);
+}
+.qr-cap{
+  display:block;margin-top:9px;
+  font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);
+}
+html[data-lang="bn"] .qr-cap{letter-spacing:.03em;text-transform:none;font-size:12px}
+.btn-line{
+  display:inline-block;min-height:44px;padding:11px 22px;
+  font-size:10px;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;
+  color:var(--ink);border:1px solid var(--line);border-radius:999px;
+  transition:background .4s ease,color .4s ease,border-color .4s ease;
+}
+.btn-line:hover{background:var(--accent);color:var(--bg);border-color:var(--accent)}
+html[data-lang="bn"] .btn-line{letter-spacing:.03em;text-transform:none;font-size:13px}
+
+.day-head{
+  text-align:center;font-family:'Cinzel',serif;font-weight:600;
+  font-size:12px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--accent);margin:6px 0 20px;
+}
+.day-head::after{content:"";display:block;width:40px;height:1px;background:var(--gold);opacity:.6;margin:10px auto 0}
+html[data-lang="bn"] .day-head{font-family:'Noto Serif Bengali',serif;letter-spacing:.03em;text-transform:none;font-size:16px}
+.day-gap{height:40px}
+
+
+/* closing */
+/* ---------- THE FAMILIES (from the printed card) ---------- */
+.fam-block{text-align:center;max-width:520px;margin:0 auto}
+.fam-role{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);margin-bottom:7px}
+.fam-name{font-family:'Great Vibes',cursive;font-size:clamp(32px,8vw,42px);
+  line-height:1.44;padding:.04em 0;margin:-.13em 0 4px;color:var(--gold)}
+.fam-of{font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--ink-2);line-height:1.75}
+.fam-sib{font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--ink-3);margin-top:3px}
+.fam-join{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:19px;
+  color:var(--gold-l);margin:20px 0 18px;display:flex;align-items:center;justify-content:center;gap:14px}
+.fam-join::before,.fam-join::after{content:"";width:44px;height:1px;background:var(--line)}
+/* Bengali sets its own faces, and letter-spacing breaks its conjuncts apart */
+html[data-lang="bn"] .fam-name{font-family:'Noto Serif Bengali',serif;font-weight:500;
+  font-size:clamp(23px,6vw,30px);line-height:1.6;margin:0 0 4px;padding:0}
+html[data-lang="bn"] .fam-role{letter-spacing:.06em;font-family:'Hind Siliguri',sans-serif}
+html[data-lang="bn"] .fam-of,html[data-lang="bn"] .fam-sib{font-family:'Hind Siliguri',sans-serif;font-size:15px;line-height:1.95}
+html[data-lang="bn"] .fam-join{font-family:'Noto Serif Bengali',serif;font-style:normal;font-size:16px}
+
+/* ---------- THE FORMAL INVITATION (nimantran) ---------- */
+.letter{border:1px solid var(--line);background:rgba(157,15,24,.03);border-radius:4px;
+  padding:clamp(22px,5vw,34px) clamp(18px,4.5vw,32px);max-width:640px;margin:0 auto}
+[data-theme="dark"] .letter{background:rgba(255,255,255,.02)}
+.letter .letter-salut{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;
+  color:var(--accent);margin-bottom:16px;text-align:center}
+.letter p{font-family:'Cormorant Garamond',serif;font-size:17px;line-height:1.9;
+  color:var(--ink-2);margin-bottom:15px;text-align:left}
+.letter .letter-plea{text-align:center;color:var(--gold-l);font-style:italic}
+/* Bengali has no true italic - the browser slants the glyphs and it reads
+   as a rendering fault, so the letter's italics are dropped in Bengali. */
+html[data-lang="bn"] .letter .letter-salut,html[data-lang="bn"] .letter p{
+  font-family:'Hind Siliguri',sans-serif;font-size:15.5px;line-height:2.1;font-style:normal}
+.letter-sign{margin-top:22px;padding-top:20px;border-top:1px solid var(--line)}
+/* .letter p sets text-align:left, and element+class outranks a bare class,
+   so the signature has to say it at the same depth to win. */
+.letter .letter-sign p{text-align:center}
+.letter-lab{font-size:9.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-3);margin-bottom:6px}
+html[data-lang="bn"] .letter-lab{letter-spacing:.08em;font-family:'Hind Siliguri',sans-serif;font-size:11px}
+.letter-nm{font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--gold);line-height:1.8}
+html[data-lang="bn"] .letter-nm{font-family:'Noto Serif Bengali',serif;font-size:16px}
+
+.closing{text-align:center}
+.closing-hash{
+  font-family:'Pinyon Script',cursive;font-size:clamp(50px,13vw,86px);
+  color:var(--accent);line-height:1.1;margin:10px 0 4px;
+}
+.closing-hash .hash{font-family:'Cormorant Garamond',serif;font-size:.42em;color:var(--gold);vertical-align:.42em}
+.closing-foot{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--ink-3);margin-top:14px}
+html[data-lang="bn"] .closing-foot{letter-spacing:.05em;text-transform:none;font-size:14px}
+
+/* falling petals */
+/* above #intro (900) so the flowers fall on the opening screen too,
+   but below the veil (950) and the light/dark disc (945) */
+.petals{position:fixed;inset:0;pointer-events:none;z-index:920;overflow:hidden}
+.petal{
+  position:absolute;top:-8%;opacity:0;
+  animation-name:fall;animation-timing-function:linear;animation-iteration-count:infinite;
+  will-change:transform;
+}
+.petal svg{width:100%;height:100%;display:block}
+@keyframes fall{
+  0%{opacity:0;transform:translate3d(0,-10vh,0) rotate3d(1,.5,.2,0deg)}
+  8%{opacity:.85}
+  92%{opacity:.5}
+  100%{opacity:0;transform:translate3d(52px,108vh,0) rotate3d(1,.5,.2,860deg)}
+}
+
+/* =========================================================
+   GRACEFUL SWITCHING
+   Colours morph over a second; a soft wash covers the moment
+   of change; language dissolves and reforms.
+   ========================================================= */
+html.theming *,html.theming *::before,html.theming *::after{
+  transition:
+    background-color 1.05s cubic-bezier(.37,0,.24,1),
+    background-image 1.05s cubic-bezier(.37,0,.24,1),
+    color 1.05s cubic-bezier(.37,0,.24,1),
+    border-color 1.05s cubic-bezier(.37,0,.24,1),
+    box-shadow 1.05s cubic-bezier(.37,0,.24,1),
+    fill 1.05s cubic-bezier(.37,0,.24,1),
+    stroke 1.05s cubic-bezier(.37,0,.24,1),
+    opacity .95s cubic-bezier(.37,0,.24,1),
+    transform .95s cubic-bezier(.37,0,.24,1) !important;
+}
+#wash{
+  position:fixed;inset:0;z-index:940;pointer-events:none;
+  background:radial-gradient(ellipse 70% 60% at 50% 42%,var(--gold-wash) 0%,var(--bg) 68%);
+  opacity:0;transition:opacity 1s cubic-bezier(.37,0,.24,1);
+}
+#wash.on{opacity:.42}
+
+/* light <-> dark: the new mode blooms outward from the SuRo monogram.
+   A disc of the incoming background colour, soft-edged, scaled from nothing. */
+#spread{
+  position:fixed;z-index:945;pointer-events:none;
+  border-radius:50%;opacity:0;
+  transform:translate(-50%,-50%) scale(0);
+  /* Opaque well past the middle so the viewport is genuinely covered when we
+     swap, then a long soft falloff so the wavefront reads as light rather
+     than as the rim of a circle. */
+  -webkit-mask-image:radial-gradient(circle at center,#000 0 62%,rgba(0,0,0,.9) 74%,rgba(0,0,0,.45) 84%,transparent 93%);
+          mask-image:radial-gradient(circle at center,#000 0 62%,rgba(0,0,0,.9) 74%,rgba(0,0,0,.45) 84%,transparent 93%);
+  will-change:transform,opacity;
+}
+#spread.go{
+  opacity:1;
+  transform:translate(-50%,-50%) scale(1);
+  /* eases in gently so the wavefront is readable, rather than swallowing
+     the screen in the first fifth of the animation */
+  transition:transform 1.15s cubic-bezier(.5,.05,.3,1),opacity .22s ease;
+}
+#spread.clear{opacity:0;transition:opacity .62s cubic-bezier(.37,0,.24,1)}
+
+/* While the disc covers the screen the swap must be instantaneous.
+   Any transition here is what makes the text look like it lags behind
+   the background. #spread itself keeps its own transitions. */
+html.instant *:not(#spread),
+html.instant *:not(#spread)::before,
+html.instant *:not(#spread)::after{transition:none!important}
+
+#intro,#invite{transition:opacity .8s cubic-bezier(.37,0,.24,1),filter .8s cubic-bezier(.37,0,.24,1)}
+#invite{opacity:0;visibility:hidden}
+#invite.on{opacity:1;visibility:visible}
+#intro.leaving{opacity:0;visibility:hidden;pointer-events:none;transition:opacity 1.1s ease,visibility 0s 1.1s}
+html.lang-switching #intro,
+html.lang-switching #invite{opacity:.04;filter:blur(3px)}
+
+/* scroll reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s cubic-bezier(.22,.61,.36,1) var(--d,0s),transform .9s cubic-bezier(.22,.61,.36,1) var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  .rv{opacity:1!important;transform:none!important}
+  .intro-alpona path,.intro-alpona circle,#veil path,#veil circle{stroke-dashoffset:0!important}
+  .petals{display:none}
+}
+.no-js .rv{opacity:1;transform:none}
+.no-js #invite{opacity:1;visibility:visible}
+.no-js #intro{display:none}
+</style>
+</head>
+<body>
+
+<div class="petals" id="petals" aria-hidden="true"></div>
+<div id="wash" aria-hidden="true"></div>
+<div id="spread" aria-hidden="true"></div>
+
+<!-- =========================================================
+     INTRO
+     ========================================================= -->
+<div id="intro">
+
+  <!-- ===== reddish-pink background, behind everything ===== -->
+  <div class="intro-bg" id="introBg" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="pulse pulse-1"></div>
+    <div class="pulse pulse-2"></div>
+    <div class="pulse pulse-3"></div>
+
+    <div class="silk"></div>
+
+    <div class="vine vine-l">
+      <svg viewBox="0 0 82 900" preserveAspectRatio="none">
+        <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+          <path d="M8 900 C34 820 4 740 26 660 C46 586 10 512 30 436 C48 366 8 292 28 218 C44 158 14 92 30 20"/>
+          <path d="M26 660 C44 648 58 656 62 672"/>
+          <path d="M30 436 C48 424 62 432 66 448"/>
+          <path d="M28 218 C46 206 60 214 64 230"/>
+          <path d="M20 780 C36 770 50 778 54 792"/>
+          <path d="M30 20 C46 12 58 20 62 34"/>
+        </g>
+      </svg>
+    </div>
+    <div class="vine vine-r">
+      <svg viewBox="0 0 82 900" preserveAspectRatio="none">
+        <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+          <path d="M8 900 C34 824 4 744 26 664 C46 590 10 516 30 440 C48 370 8 296 28 222 C44 162 14 96 30 24"/>
+          <path d="M26 664 C44 652 58 660 62 676"/>
+          <path d="M30 440 C48 428 62 436 66 452"/>
+          <path d="M28 222 C46 210 60 218 64 234"/>
+          <path d="M20 784 C36 774 50 782 54 796"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="bloom bloom-1"></div>
+    <div class="bloom bloom-2"></div>
+    <div class="bloom bloom-3"></div>
+  </div>
+
+  <!-- ===== Bengali scene ===== -->
+  <div class="scene" aria-hidden="true">
+
+    <!-- garad bands, the same saree border as the invitation -->
+    <div class="garad intro-band top"></div>
+    <div class="garad intro-band bottom"></div>
+
+    <!-- toran: rope, mango leaves, marigolds -->
+    <div class="toran"></div>
+
+    <!-- hanging diyas, one per top corner -->
+    <div class="hdiya-glow hgl"></div>
+    <div class="hdiya-glow hgr"></div>
+    <div class="hdiya hdiya-l">
+      <svg viewBox="0 0 46 64">
+        <g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="23" cy="4.5" r="3.2"/>
+          <path d="M23 7.7 C18 14 12 24 10.5 35"/>
+          <path d="M23 7.7 C28 14 34 24 35.5 35"/>
+        </g>
+        <path class="flame" d="M23 34 C19.5 29 20.5 23.5 23 18.5 C25.5 23.5 26.5 29 23 34 Z" fill="var(--gold-l)"/>
+        <path class="flame" d="M23 33 C21 30 21.5 26.5 23 23.5 C24.5 26.5 25 30 23 33 Z" fill="#fff3d0" opacity=".85"/>
+        <g fill="none" stroke="var(--accent-d)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 35 C5 48 12 56 23 56 C34 56 41 48 41 35 Z"/>
+          <path d="M3 35 H43"/>
+          <path d="M10 43 C14 47 18.5 48.5 23 48.5 C27.5 48.5 32 47 36 43" opacity=".55"/>
+          <path d="M23 56 V60" opacity=".6"/>
+          <path d="M19 60 H27" opacity=".6"/>
+        </g>
+      </svg>
+    </div>
+    <div class="hdiya hdiya-r">
+      <svg viewBox="0 0 46 64">
+        <g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="23" cy="4.5" r="3.2"/>
+          <path d="M23 7.7 C18 14 12 24 10.5 35"/>
+          <path d="M23 7.7 C28 14 34 24 35.5 35"/>
+        </g>
+        <path class="flame" d="M23 34 C19.5 29 20.5 23.5 23 18.5 C25.5 23.5 26.5 29 23 34 Z" fill="var(--gold-l)"/>
+        <path class="flame" d="M23 33 C21 30 21.5 26.5 23 23.5 C24.5 26.5 25 30 23 33 Z" fill="#fff3d0" opacity=".85"/>
+        <g fill="none" stroke="var(--accent-d)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 35 C5 48 12 56 23 56 C34 56 41 48 41 35 Z"/>
+          <path d="M3 35 H43"/>
+          <path d="M10 43 C14 47 18.5 48.5 23 48.5 C27.5 48.5 32 47 36 43" opacity=".55"/>
+          <path d="M23 56 V60" opacity=".6"/>
+          <path d="M19 60 H27" opacity=".6"/>
+        </g>
+      </svg>
+    </div>
+
+    <!-- diyas -->
+    <div class="diya-glow gl"></div>
+    <div class="diya-glow gr"></div>
+    <div class="diya diya-l">
+      <svg viewBox="0 0 64 56">
+        <path class="flame" d="M32 30 C26 24 28 16 32 8 C36 16 38 24 32 30 Z" fill="var(--gold-l)"/>
+        <path class="flame" d="M32 29 C29 25 30 20 32 15 C34 20 35 25 32 29 Z" fill="#fff3d0" opacity=".85"/>
+        <g fill="none" stroke="var(--accent-d)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M10 36 C10 46 21 52 32 52 C43 52 54 46 54 36 Z"/>
+          <path d="M10 36 C18 32 46 32 54 36"/>
+          <path d="M28 34 C30 31 34 31 36 34" opacity=".7"/>
+        </g>
+      </svg>
+    </div>
+    <div class="diya diya-r">
+      <svg viewBox="0 0 64 56">
+        <path class="flame" d="M32 30 C26 24 28 16 32 8 C36 16 38 24 32 30 Z" fill="var(--gold-l)"/>
+        <path class="flame" d="M32 29 C29 25 30 20 32 15 C34 20 35 25 32 29 Z" fill="#fff3d0" opacity=".85"/>
+        <g fill="none" stroke="var(--accent-d)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M10 36 C10 46 21 52 32 52 C43 52 54 46 54 36 Z"/>
+          <path d="M10 36 C18 32 46 32 54 36"/>
+          <path d="M28 34 C30 31 34 31 36 34" opacity=".7"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <svg class="intro-alpona" viewBox="0 0 260 260" aria-hidden="true">
+    <g class="ring-a" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round">
+      <path d="M130 62 C144 40, 144 22, 130 8 C116 22, 116 40, 130 62 Z"/>
+      <path d="M130 62 C144 40, 144 22, 130 8 C116 22, 116 40, 130 62 Z" transform="rotate(45 130 130)"/>
+      <path d="M130 62 C144 40, 144 22, 130 8 C116 22, 116 40, 130 62 Z" transform="rotate(90 130 130)"/>
+      <path d="M130 62 C144 40, 144 22, 130 8 C116 22, 116 40, 130 62 Z" transform="rotate(135 130 130)"/>
+      <path d="M130 62 C144 40, 144 22, 130 8 C116 22, 116 40, 130 62 Z" transform="rotate(180 130 130)"/>
+      <path d="M130 62 C144 40, 144 22, 130 8 C116 22, 116 40, 130 62 Z" transform="rotate(225 130 130)"/>
+      <path d="M130 62 C144 40, 144 22, 130 8 C116 22, 116 40, 130 62 Z" transform="rotate(270 130 130)"/>
+      <path d="M130 62 C144 40, 144 22, 130 8 C116 22, 116 40, 130 62 Z" transform="rotate(315 130 130)"/>
+      <circle cx="130" cy="130" r="106" stroke-dasharray="2 10"/>
+    </g>
+    <g class="ring-b" fill="none" stroke="currentColor" stroke-width=".9" stroke-linecap="round">
+      <path d="M130 98 C139 86, 139 74, 130 64 C121 74, 121 86, 130 98 Z" transform="rotate(22.5 130 130)"/>
+      <path d="M130 98 C139 86, 139 74, 130 64 C121 74, 121 86, 130 98 Z" transform="rotate(67.5 130 130)"/>
+      <path d="M130 98 C139 86, 139 74, 130 64 C121 74, 121 86, 130 98 Z" transform="rotate(112.5 130 130)"/>
+      <path d="M130 98 C139 86, 139 74, 130 64 C121 74, 121 86, 130 98 Z" transform="rotate(157.5 130 130)"/>
+      <path d="M130 98 C139 86, 139 74, 130 64 C121 74, 121 86, 130 98 Z" transform="rotate(202.5 130 130)"/>
+      <path d="M130 98 C139 86, 139 74, 130 64 C121 74, 121 86, 130 98 Z" transform="rotate(247.5 130 130)"/>
+      <path d="M130 98 C139 86, 139 74, 130 64 C121 74, 121 86, 130 98 Z" transform="rotate(292.5 130 130)"/>
+      <path d="M130 98 C139 86, 139 74, 130 64 C121 74, 121 86, 130 98 Z" transform="rotate(337.5 130 130)"/>
+      <circle cx="130" cy="130" r="60" stroke-dasharray="1.5 8"/>
+    </g>
+  </svg>
+
+  <!-- Ganesha, invoked first, as on a printed card -->
+  <div class="ganesha">
+    <div class="gan-wrap" id="ganTap" role="button" tabindex="0" aria-label="Ganesha">
+      <svg viewBox="0 0 80 80" aria-hidden="true">
+      <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+        <circle class="draw-in" cx="40" cy="40" r="37.5" stroke-width="1"/>
+        <circle cx="40" cy="40" r="33.5" stroke-width=".7" stroke-dasharray="1.5 4" opacity=".65"/>
+        <!-- mukut -->
+        <path class="draw-in" d="M30 23 C32 12 48 12 50 23" stroke-width="1.4"/>
+        <path class="draw-in" d="M40 12 V6" stroke-width="1.3"/>
+        <circle class="gj" cx="40" cy="4.6" r="2.1" stroke-width="1.3"/>
+        <!-- head -->
+        <path class="draw-in" d="M40 20 C50 20 55.5 28 55.5 38 C55.5 48 49 54.5 40 54.5 C31 54.5 24.5 48 24.5 38 C24.5 28 30 20 40 20 Z" stroke-width="1.4"/>
+        <!-- ears -->
+        <g class="g-ear g-ear-l"><path class="draw-in" d="M26 27 C15.5 24.5 8 32 10.5 40.5 C13 49 21 52 27.5 47.5" stroke-width="1.3"/></g>
+        <g class="g-ear g-ear-r"><path class="draw-in" d="M54 27 C64.5 24.5 72 32 69.5 40.5 C67 49 59 52 52.5 47.5" stroke-width="1.3"/></g>
+        <path d="M22 32 C18 33 15.5 37 16.5 41" stroke-width=".8" opacity=".5"/>
+        <path d="M58 32 C62 33 64.5 37 63.5 41" stroke-width=".8" opacity=".5"/>
+        <!-- eyes -->
+        <path d="M32.5 35 C34.5 32.6 37 32.6 38.5 35" stroke-width="1.2"/>
+        <path d="M41.5 35 C43 32.6 45.5 32.6 47.5 35" stroke-width="1.2"/>
+        <!-- tilak -->
+        <path class="gj" d="M36.5 26 V30.5" stroke-width="1.2"/>
+        <path class="gj" d="M40 24.8 V30.5" stroke-width="1.2"/>
+        <path class="gj" d="M43.5 26 V30.5" stroke-width="1.2"/>
+        <!-- tusks -->
+        <path d="M34 47.5 C32 50.5 31.5 53 32.5 55" stroke-width="1.2"/>
+        <path d="M46 47.5 C48 50.5 48.5 53 47.5 55" stroke-width="1.2"/>
+        <!-- trunk -->
+        <g class="g-trunk"><path class="draw-in" d="M40 41 C40.5 49.5 37 56.5 31.5 59 C26 61.5 22.5 58 23.8 54 C24.8 50.8 29 50 30.5 53.2" stroke-width="1.5"/></g>
+      </g>
+    </svg>
+    </div>
+    <p class="ganesha-say">
+      <span class="en">Shri Shri Ganeshaya Namah</span>
+      <span class="bn">শ্রী শ্রী গণেশায় নমঃ</span>
+    </p>
+    <p class="ganesha-say ganesha-say-2">
+      <span class="en">Shree Shree Prajapataye Namah</span>
+      <span class="bn">শ্রী শ্রী প্রজাপতয়ে নমঃ</span>
+    </p>
+    <p class="intro-eyebrow"><span class="en">Shubho Bibaho</span><span class="bn">শুভ বিবাহ</span></p>
+  </div>
+
+  <div class="suro-holder">
+    <span class="sp-ring sp-shankha" aria-hidden="true"></span>
+    <span class="sp-ring sp-pola" aria-hidden="true"></span>
+    <span class="tap-ripple tap-ripple-1" aria-hidden="true"></span>
+    <span class="tap-ripple tap-ripple-2" aria-hidden="true"></span>
+    <button class="suro-btn" id="startBtn" type="button" aria-label="Open the invitation">
+      <span class="suro-text"><span class="hash">#</span>SuRo</span>
+    </button>
+  </div>
+
+  <div class="intro-lower">
+  <p class="intro-hint">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M12 20V5"/><path d="M5.5 11.5L12 5l6.5 6.5"/>
+    </svg>
+    <span class="en">Tap #SuRo to open</span><span class="bn">খুলতে #SuRo-তে ট্যাপ করুন</span>
+  </p>
+  <p class="invite-lead">
+    <span class="en">The Basak family joyfully invites you to the wedding of</span>
+    <span class="bn">বসাক পরিবার সানন্দে আমন্ত্রণ জানাচ্ছে</span>
+  </p>
+  <div class="invite-names">
+    <span class="nm"><span class="en">Susmita Basak</span><span class="bn">সুস্মিতা বসাক</span></span>
+    <span class="amp" aria-hidden="true">
+      <svg viewBox="0 0 120 22" class="amp-orn"><g fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round">
+        <path d="M2 11 H36"/><path d="M84 11 H118"/>
+        <path d="M42 11 C42 7 45 4.5 48 6.5 C50.5 8 49.5 12 46.5 13.5 C43.5 15 42 13 42 11 Z" opacity=".8"/>
+        <path d="M78 11 C78 7 75 4.5 72 6.5 C69.5 8 70.5 12 73.5 13.5 C76.5 15 78 13 78 11 Z" opacity=".8"/>
+      </g></svg>
+      <b class="amp-ch"><span class="en">&amp;</span><span class="bn">ও</span></b>
+    </span>
+    <span class="nm"><span class="en">Rohit Mukherjee</span><span class="bn">রোহিত মুখার্জী</span></span>
+  </div>
+  <p class="intro-date"><span class="en">4 &amp; 5 December 2026 &middot; Kolkata</span><span class="bn">৪ ও ৫ ডিসেম্বর ২০২৬ &middot; কলকাতা</span></p>
+  </div>
+  <div class="ctl-row intro-ctl">
+    <button class="ctl ctl-lang" data-lang-btn type="button" title="Switch to Bengali / বাংলায় দেখুন" aria-label="Switch to Bengali">
+      <span class="glyph glyph-bn">অ</span>
+      <span class="glyph glyph-en">A</span>
+    </button>
+  </div>
+</div>
+
+<!-- The song. Starts on the #SuRo tap - that tap is the user gesture every
+     mobile browser requires before audio may play, so it can never surprise
+     anyone who has not opened the invitation. -->
+<audio id="song" src="assets/audio/song.mp3" loop preload="none"></audio>
+
+<!-- 2 second alpona transition -->
+<div id="veil" aria-hidden="true">
+  <div class="drape drape-l"></div>
+  <div class="drape drape-r"></div>
+  <div class="veil-swag" id="veilSwag"></div>
+  <span class="veil-shock"></span>
+  <div class="veil-stamp"><span class="suro-text"><span class="hash">#</span>SuRo</span></div>
+</div>
+</div>
+
+<!-- =========================================================
+     INVITATION
+     ========================================================= -->
+<main id="invite">
+
+  <div class="bar">
+    <div class="ctl-row">
+      <button class="ctl ctl-palette" data-palette-btn type="button" title="Switch to the mauve look" aria-label="Switch to the mauve look">
+        <svg class="ico-gem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2.8 L20.2 9.6 L12 21.2 L3.8 9.6 Z"/>
+          <path d="M3.8 9.6 H20.2"/>
+          <path d="M12 2.8 L8.5 9.6 L12 21.2"/>
+          <path d="M12 2.8 L15.5 9.6 L12 21.2"/>
+        </svg>
+        <svg class="ico-rosette" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 12 C13.7 9.4 13.7 6.6 12 4 C10.3 6.6 10.3 9.4 12 12 Z"/>
+          <path d="M12 12 C13.7 9.4 13.7 6.6 12 4 C10.3 6.6 10.3 9.4 12 12 Z" transform="rotate(60 12 12)"/>
+          <path d="M12 12 C13.7 9.4 13.7 6.6 12 4 C10.3 6.6 10.3 9.4 12 12 Z" transform="rotate(120 12 12)"/>
+          <path d="M12 12 C13.7 9.4 13.7 6.6 12 4 C10.3 6.6 10.3 9.4 12 12 Z" transform="rotate(180 12 12)"/>
+          <path d="M12 12 C13.7 9.4 13.7 6.6 12 4 C10.3 6.6 10.3 9.4 12 12 Z" transform="rotate(240 12 12)"/>
+          <path d="M12 12 C13.7 9.4 13.7 6.6 12 4 C10.3 6.6 10.3 9.4 12 12 Z" transform="rotate(300 12 12)"/>
+          <circle cx="12" cy="12" r="1.5"/>
+        </svg>
+      </button>
+      <button class="ctl ctl-mode" data-mode-btn type="button" title="Switch to dark" aria-label="Switch to dark">
+        <svg class="ico-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round">
+          <circle cx="12" cy="12" r="4.1"/>
+          <path d="M12 2.4v2.5M12 19.1v2.5M2.4 12h2.5M19.1 12h2.5M5.2 5.2l1.8 1.8M17 17l1.8 1.8M18.8 5.2L17 7M7 17l-1.8 1.8"/>
+        </svg>
+        <svg class="ico-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.3 14.1A8.5 8.5 0 1 1 10.1 3.7a6.7 6.7 0 0 0 10.2 10.4z"/>
+          <path d="M17.4 3.9l.55 1.5 1.5.55-1.5.55-.55 1.5-.55-1.5-1.5-.55 1.5-.55z"/>
+        </svg>
+      </button>
+      <button class="ctl ctl-lang" data-lang-btn type="button" title="Switch to Bengali / বাংলায় দেখুন" aria-label="Switch to Bengali">
+        <span class="glyph glyph-bn">অ</span>
+        <span class="glyph glyph-en">A</span>
+      </button>
+      <button class="ctl ctl-sound is-on" id="soundBtn" type="button" title="Turn the music off" aria-label="Turn the music off" aria-pressed="true">
+        <svg class="ico-sound" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 9.5h3.2L12 5.4v13.2L7.2 14.5H4z"/>
+          <path class="wave wave-1" d="M15.4 9.6a3.4 3.4 0 0 1 0 4.8"/>
+          <path class="wave wave-2" d="M18 7.2a6.8 6.8 0 0 1 0 9.6"/>
+          <path class="mute-x" d="M15.6 9.8l4.6 4.4M20.2 9.8l-4.6 4.4"/>
+        </svg>
+      </button>
+      <button class="ctl ctl-viz is-off" id="vizBtn" type="button" title="Show the music" aria-label="Show the music" aria-pressed="false">
+        <svg class="ico-viz" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round">
+          <path class="v-wave" d="M2.5 12c2.4 0 2.4-5.4 4.8-5.4S9.7 17.4 12 17.4s2.4-8.8 4.8-8.8 2.3 3.4 4.7 3.4"/>
+          <path class="v-flat" d="M2.5 12h19"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="garad" aria-hidden="true"></div>
+  <div class="wave-wrap" id="waveWrap" aria-hidden="true"><canvas id="wave"></canvas></div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <svg class="hero-mark" viewBox="0 0 260 260" aria-hidden="true">
+      <g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+        <path d="M130 62 C144 40, 144 22, 130 8 C116 22, 116 40, 130 62 Z"/>
+        <path d="M130 62 C144 40, 144 22, 130 8 C116 22, 116 40, 130 62 Z" transform="rotate(45 130 130)"/>
+        <path d="M130 62 C144 40, 144 22, 130 8 C116 22, 116 40, 130 62 Z" transform="rotate(90 130 130)"/>
+        <path d="M130 62 C144 40, 144 22, 130 8 C116 22, 116 40, 130 62 Z" transform="rotate(135 130 130)"/>
+        <path d="M130 62 C144 40, 144 22, 130 8 C116 22, 116 40, 130 62 Z" transform="rotate(180 130 130)"/>
+        <path d="M130 62 C144 40, 144 22, 130 8 C116 22, 116 40, 130 62 Z" transform="rotate(225 130 130)"/>
+        <path d="M130 62 C144 40, 144 22, 130 8 C116 22, 116 40, 130 62 Z" transform="rotate(270 130 130)"/>
+        <path d="M130 62 C144 40, 144 22, 130 8 C116 22, 116 40, 130 62 Z" transform="rotate(315 130 130)"/>
+        <path d="M130 98 C139 86, 139 74, 130 64 C121 74, 121 86, 130 98 Z" transform="rotate(22.5 130 130)"/>
+        <path d="M130 98 C139 86, 139 74, 130 64 C121 74, 121 86, 130 98 Z" transform="rotate(67.5 130 130)"/>
+        <path d="M130 98 C139 86, 139 74, 130 64 C121 74, 121 86, 130 98 Z" transform="rotate(112.5 130 130)"/>
+        <path d="M130 98 C139 86, 139 74, 130 64 C121 74, 121 86, 130 98 Z" transform="rotate(157.5 130 130)"/>
+        <path d="M130 98 C139 86, 139 74, 130 64 C121 74, 121 86, 130 98 Z" transform="rotate(202.5 130 130)"/>
+        <path d="M130 98 C139 86, 139 74, 130 64 C121 74, 121 86, 130 98 Z" transform="rotate(247.5 130 130)"/>
+        <path d="M130 98 C139 86, 139 74, 130 64 C121 74, 121 86, 130 98 Z" transform="rotate(292.5 130 130)"/>
+        <path d="M130 98 C139 86, 139 74, 130 64 C121 74, 121 86, 130 98 Z" transform="rotate(337.5 130 130)"/>
+        <circle cx="130" cy="130" r="106"/>
+        <circle cx="130" cy="130" r="60"/>
+      </g>
+    </svg>
+    <div class="wrap">
+      <svg class="orn rv" viewBox="0 0 240 26" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round">
+        <path d="M0 14 H 86"/><path d="M154 14 H 240"/>
+        <path d="M120 4 C132 9, 132 17, 120 22 C108 17, 108 9, 120 4 Z"/>
+        <circle cx="100" cy="14" r="2"/><circle cx="140" cy="14" r="2"/>
+      </svg>
+      <p class="hero-eyebrow rv" style="--d:.05s"><span class="en">Shubho Bibaho</span><span class="bn">শুভ বিবাহ</span></p>
+      <h1 class="names rv" style="--d:.1s">
+        <span class="en">Susmita <em>&amp;</em> Rohit</span>
+        <span class="bn">সুস্মিতা <em>ও</em> রোহিত</span>
+      </h1>
+      <p class="names-sub rv" style="--d:.18s"><span class="en">Susmita Basak &middot; Rohit Mukherjee</span><span class="bn">সুস্মিতা বসাক &middot; রোহিত মুখার্জী</span></p>
+      <p class="hero-when rv" style="--d:.26s"><span class="en">4 &amp; 5 December 2026 &middot; Kolkata</span><span class="bn">৪ ও ৫ ডিসেম্বর ২০২৬ &middot; কলকাতা</span></p>
+    </div>
+  </section>
+
+  <!-- PORTRAIT -->
+  <section style="padding-top:0">
+    <div class="wrap">
+      <figure class="portrait rv">
+        <img src="assets/img/portrait.jpg?v=2" width="1100" height="1464" alt="Susmita and Rohit" loading="lazy" decoding="async">
+      </figure>
+    </div>
+  </section>
+
+  <!-- BLESSING -->
+  <section class="band">
+    <div class="wrap">
+      <p class="kicker rv"><span class="en">Shree Shree Prajapataye Namah</span><span class="bn">শ্রী শ্রী প্রজাপতয়ে নমঃ</span></p>
+      <h2 class="h2 rv" style="--d:.06s"><span class="en">Come, and <em>bless them</em></span><span class="bn">আসুন, ওদের <em>আশীর্বাদ</em> করুন</span></h2>
+      <p class="lede rv" style="--d:.12s">
+        <span class="en">By the grace of the Almighty and with the blessings of our elders, Sri Ratan Kumar Basak and Smt. Suchitra Basak invite you to Kolkata for two days of celebration, for the wedding of their younger daughter. Come with your family, share our sweets, and give Susmita and Rohit your aashirbad as they begin this life together.</span>
+        <span class="bn">ঈশ্বরের কৃপায় ও গুরুজনদের আশীর্বাদে, শ্রী রতন কুমার বসাক ও শ্রীমতী সুচিত্রা বসাক তাঁদের কনিষ্ঠা কন্যার বিবাহ উপলক্ষে আপনাকে কলকাতায় দুই দিনের উৎসবে আমন্ত্রণ জানাচ্ছেন। সপরিবারে আসুন, মিষ্টিমুখ করুন, আর সুস্মিতা ও রোহিতকে আশীর্বাদ করুন তাদের নতুন জীবনের শুরুতে।</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- THE FAMILIES (from the printed card) -->
+  <section class="band">
+    <div class="wrap">
+      <p class="kicker rv"><span class="en">The families</span><span class="bn">পরিচিতি</span></p>
+      <h2 class="h2 rv" style="--d:.06s"><span class="en">With the blessings of <em>our elders</em></span><span class="bn">গুরুজনদের <em>আশীর্বাদে</em></span></h2>
+      <div class="fam-block rv" style="--d:.12s">
+        <p class="fam-role"><span class="en">The bride</span><span class="bn">পাত্রী</span></p>
+        <p class="fam-name"><span class="en">Susmita Basak</span><span class="bn">কল্যাণীয়া সুস্মিতা বসাক</span></p>
+        <p class="fam-of">
+          <span class="en">Younger daughter of Sri Ratan Kumar Basak<br>&amp; Smt. Suchitra Basak</span>
+          <span class="bn">পিতা : শ্রী রতন কুমার বসাক<br>মাতা : শ্রীমতী সুচিত্রা বসাক</span>
+        </p>
+        <p class="fam-sib">
+          <span class="en">Sister of Sri Shibir Basak<br>Sister-in-law of Smt. Reshmi De<br>Aunt of Rishiv De Basak (Simba)</span>
+          <span class="bn">ভ্রাতা : শ্রী শিবির বসাক<br>ভ্রাতৃবধূ : শ্রীমতী রেশমি দে<br>ভ্রাতুষ্পুত্র : ঋষিভ দে বসাক (সিম্বা)</span>
+        </p>
+
+        <p class="fam-join"><span class="en">with</span><span class="bn">সহিত</span></p>
+
+        <p class="fam-role"><span class="en">The groom</span><span class="bn">পাত্র</span></p>
+        <p class="fam-name"><span class="en">Rohit Mukherjee</span><span class="bn">কল্যাণীয় রোহিত মুখার্জী</span></p>
+        <p class="fam-of">
+          <span class="en">Only son of Sri Subhankar Mukherjee<br>&amp; Smt. Jaishree Mukherjee</span>
+          <span class="bn">পিতা : শ্রী শুভঙ্কর মুখার্জী<br>মাতা : শ্রীমতী জয়শ্রী মুখার্জী</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DATES -->
+  <section>
+    <div class="wrap">
+      <p class="kicker rv"><span class="en">Save the dates</span><span class="bn">তারিখ মনে রাখুন</span></p>
+      <h2 class="h2 rv" style="--d:.06s"><span class="en">Two days of <em>celebration</em></span><span class="bn">দুই দিনের <em>উৎসব</em></span></h2>
+      <div class="date-frame rv" style="--d:.12s">
+        <p class="date-day"><span class="en">Friday &amp; Saturday</span><span class="bn">শুক্রবার ও শনিবার</span></p>
+        <div class="date-main">
+          <div>
+            <div class="date-mon"><span class="en">December</span><span class="bn">ডিসেম্বর</span></div>
+            <div class="date-yr"><span class="en">2 0 2 6</span><span class="bn">২ ০ ২ ৬</span></div>
+          </div>
+          <div class="date-rule"></div>
+          <div class="date-num"><span class="en">04 &amp; 05</span><span class="bn">০৪ ও ০৫</span></div>
+        </div>
+        <p class="date-bengali"><span class="en">19th Agrahayan 1433</span><span class="bn">১৯শে অগ্রহায়ণ ১৪৩৩</span></p>
+        <p class="date-summary">
+          <span class="en"><b>Friday the 4th</b> - Mehendi &amp; Sangeet<br>
+            <b>Saturday the 5th</b> - Haldi &amp; the wedding</span>
+          <span class="bn"><b>শুক্রবার, ৪ঠা</b> - মেহেন্দি ও সঙ্গীত<br>
+            <b>শনিবার, ৫ই</b> - গায়ে হলুদ ও শুভ বিবাহ</span>
+        </p>
+
+        <div class="cd" id="countdown">
+          <div class="cd-rule" aria-hidden="true"></div>
+          <div class="cd-counting">
+            <div class="cd-cells">
+              <div class="cd-cell" id="cdMonthCell">
+                <b id="cdMo">&mdash;</b>
+                <i><span class="en" id="cdMoL">months</span><span class="bn">মাস</span></i>
+              </div>
+              <div class="cd-cell">
+                <b id="cdDa">&mdash;</b>
+                <i><span class="en" id="cdDaL">days</span><span class="bn">দিন</span></i>
+              </div>
+            </div>
+            <p class="cd-togo"><span class="en">to go</span><span class="bn">বাকি</span></p>
+          </div>
+          <div class="cd-today" hidden>
+            <p class="cd-big"><span class="en">We are getting married today!</span><span class="bn">আজ আমাদের বিয়ে!</span></p>
+            <p class="cd-sub"><span class="en">Shubho Bibaho</span><span class="bn">শুভ বিবাহ</span></p>
+          </div>
+          <div class="cd-married" hidden>
+            <p class="cd-big"><span class="en">We are married!</span><span class="bn">আমাদের বিয়ে হয়ে গেছে!</span></p>
+            <p class="cd-sub cd-sub-quiet"><span class="en">Thank you for being there</span><span class="bn">সঙ্গে থাকার জন্য ধন্যবাদ</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VENUES -->
+  <section class="band">
+    <div class="wrap">
+      <p class="kicker rv"><span class="en">The venues</span><span class="bn">অনুষ্ঠানস্থল</span></p>
+      <h2 class="h2 rv" style="--d:.06s"><span class="en">Where to <em>find us</em></span><span class="bn">কোথায় <em>পাবেন</em> আমাদের</span></h2>
+      <div class="cards">
+        <article class="card rv" style="--d:.1s">
+          <div class="card-ico"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"><path d="M6 34V18L20 7l14 11v16z"/><path d="M15 34V23h10v11"/><path d="M20 7V3"/><path d="M17 4.6Q20 .8 23 4.6"/></svg></div>
+          <p class="card-for"><span class="en">Mehendi &middot; Sangeet &middot; Haldi</span><span class="bn">মেহেন্দি &middot; সঙ্গীত &middot; গায়ে হলুদ</span></p>
+          <h3 class="card-name"><span class="en">Basak Bari</span><span class="bn">বসাক বাড়ি</span></h3>
+          <p class="card-sub"><span class="en">Debendra Nagar, Kolkata</span><span class="bn">দেবেন্দ্রনগর, কলকাতা</span></p>
+          <p class="card-note"><span class="en">The bride&rsquo;s home, where the first three gatherings unfold.</span><span class="bn">কনের বাড়ি, যেখানে প্রথম তিনটি অনুষ্ঠান হবে।</span></p>
+        </article>
+        <article class="card rv" style="--d:.18s">
+          <div class="card-ico"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"><path d="M7 33V19q0-9 13-9t13 9v14"/><path d="M12 33V21q0-6 8-6t8 6v12"/><path d="M20 10V5"/><path d="M17 6Q20 1.6 23 6"/><path d="M4 33h32"/></svg></div>
+          <p class="card-for"><span class="en">Shubho Bibaho</span><span class="bn">শুভ বিবাহ</span></p>
+          <h3 class="card-name"><span class="en">Shri Krishna Banquet Hall</span><span class="bn">শ্রী কৃষ্ণ ব্যাঙ্কোয়েট হল</span></h3>
+          <p class="card-sub"><span class="en">Kestopur, Kolkata</span><span class="bn">কেষ্টপুর, কলকাতা</span></p>
+          <p class="card-note"><span class="en">About ten minutes from Basak Bari by car. Dinner follows the ceremony.</span><span class="bn">বসাক বাড়ি থেকে গাড়িতে প্রায় দশ মিনিট। অনুষ্ঠানের পরে নৈশভোজ।</span></p>
+          <a class="btn-line" target="_blank" rel="noopener" href="https://maps.app.goo.gl/cppFfc9VWAQZmAPa7"><span class="en">Open in Maps</span><span class="bn">ম্যাপে দেখুন</span></a>
+          <a class="venue-qr" target="_blank" rel="noopener" href="https://maps.app.goo.gl/cppFfc9VWAQZmAPa7">
+            <img src="assets/img/venue-qr.svg?v=2" width="120" height="120" loading="lazy" alt="QR code with directions to Shri Krishna Banquet Hall">
+            <span class="qr-cap"><span class="en">Scan for directions</span><span class="bn">পথনির্দেশের জন্য স্ক্যান করুন</span></span>
+          </a>
+        </article>
+      </div>
+      <p class="lede rv" style="--d:.24s;margin-top:30px;font-size:16px">
+        <span class="en">December evenings in Kolkata turn cool. Carry something warm for the wedding night.</span>
+        <span class="bn">ডিসেম্বরে কলকাতার সন্ধ্যা ঠান্ডা। বিয়ের রাতের জন্য গরম কিছু সঙ্গে রাখবেন।</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- CELEBRATIONS -->
+  <section class="band">
+    <div class="wrap">
+      <p class="kicker rv"><span class="en">The festivities</span><span class="bn">অনুষ্ঠানসূচী</span></p>
+      <h2 class="h2 rv" style="--d:.06s"><span class="en">Two days, <em>four gatherings</em></span><span class="bn">দুই দিন, <em>চারটি অনুষ্ঠান</em></span></h2>
+
+      <p class="day-head rv" style="--d:.1s"><span class="en">Friday &middot; 4 December 2026</span><span class="bn">শুক্রবার &middot; ৪ ডিসেম্বর ২০২৬</span></p>
+      <div class="cards">
+        <article class="card rv" style="--d:.14s">
+          <div class="card-ico"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><path d="M20 35V11"/><path d="M20 28Q10 25 8 14Q17 16 20 25"/><path d="M20 28Q30 25 32 14Q23 16 20 25"/><path d="M20 13Q16 9 20 4Q24 9 20 13Z"/></svg></div>
+          <h3 class="card-name"><span class="en">Mehendi</span><span class="bn">মেহেন্দি</span></h3>
+          <p class="card-time"><span class="en">9:00 AM onwards</span><span class="bn">সকাল ৯টা থেকে</span></p>
+          <p class="card-sub"><span class="en">Basak Bari, Debendra Nagar</span><span class="bn">বসাক বাড়ি, দেবেন্দ্রনগর</span></p>
+          <p class="card-note"><span class="en">Henna on the bride&rsquo;s hands, sweets, and a house full of noise.</span><span class="bn">কনের হাতে মেহেন্দি, মিষ্টিমুখ, আর হইহুল্লোড়ে ভরা বাড়ি।</span></p>
+        </article>
+        <article class="card rv" style="--d:.22s">
+          <div class="card-ico"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"><path d="M15 28V9l14-3v18"/><ellipse cx="11" cy="29" rx="4" ry="3"/><ellipse cx="25" cy="26" rx="4" ry="3"/><path d="M15 14l14-3"/></svg></div>
+          <h3 class="card-name"><span class="en">Sangeet</span><span class="bn">সঙ্গীত</span></h3>
+          <p class="card-time"><span class="en">5:00 PM onwards</span><span class="bn">বিকেল ৫টা থেকে</span></p>
+          <p class="card-sub"><span class="en">Basak Bari, Debendra Nagar</span><span class="bn">বসাক বাড়ি, দেবেন্দ্রনগর</span></p>
+          <p class="card-note"><span class="en">An evening of song and dance, and everyone made to perform.</span><span class="bn">গান আর নাচের সন্ধ্যা, আর সকলকেই কিছু না কিছু করতে হবে।</span></p>
+        </article>
+      </div>
+
+      <div class="day-gap"></div>
+
+      <p class="day-head rv" style="--d:.1s"><span class="en">Saturday &middot; 5 December 2026</span><span class="bn">শনিবার &middot; ৫ ডিসেম্বর ২০২৬</span></p>
+      <div class="cards">
+        <article class="card rv" style="--d:.14s">
+          <div class="card-ico"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><circle cx="20" cy="20" r="5.5"/><path d="M20 7V2M20 38v-5M7 20H2M38 20h-5M10.8 10.8L7.3 7.3M32.7 32.7l-3.5-3.5M29.2 10.8l3.5-3.5M10.8 29.2l-3.5 3.5"/><circle cx="20" cy="20" r="11" stroke-dasharray="2 5"/></svg></div>
+          <h3 class="card-name"><span class="en">Haldi</span><span class="bn">গায়ে হলুদ</span></h3>
+          <p class="card-time"><span class="en">9:00 AM onwards</span><span class="bn">সকাল ৯টা থেকে</span></p>
+          <p class="card-sub"><span class="en">Basak Bari, Debendra Nagar</span><span class="bn">বসাক বাড়ি, দেবেন্দ্রনগর</span></p>
+          <p class="card-note"><span class="en">Turmeric, laughter, and the old blessings of a Bengali morning.</span><span class="bn">হলুদ, হাসি, আর বাঙালি সকালের চিরচেনা আশীর্বাদ।</span></p>
+        </article>
+        <article class="card rv" style="--d:.22s">
+          <div class="card-ico"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"><path d="M7 33V19q0-9 13-9t13 9v14"/><path d="M13 33V21q0-6 7-6t7 6v12"/><path d="M20 10V4"/><path d="M17 5.4Q20 1 23 5.4"/><path d="M20 19q-3.5 3.5 0 7 3.5-3.5 0-7z"/><path d="M4 33h32"/></svg></div>
+          <h3 class="card-name"><span class="en">Shubho Bibaho</span><span class="bn">শুভ বিবাহ</span></h3>
+          <p class="card-time"><span class="en">6:00 PM onwards</span><span class="bn">সন্ধ্যা ৬টা থেকে</span></p>
+          <p class="card-sub"><span class="en">Shri Krishna Banquet Hall, Kestopur</span><span class="bn">শ্রী কৃষ্ণ ব্যাঙ্কোয়েট হল, কেষ্টপুর</span></p>
+          <p class="card-note"><span class="en">The wedding, at the auspicious hour, followed by the dinner party.</span><span class="bn">শুভ লগ্নে বিবাহ। এরপর নৈশভোজের আসর।</span></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="garad" aria-hidden="true"></div>
+
+  <!-- THE FORMAL INVITATION (nimantran, from the printed card) -->
+  <section class="band">
+    <div class="wrap">
+      <p class="kicker rv"><span class="en">॥ Shree Shree Prajapataye Namah ॥</span><span class="bn">॥ শ্রী শ্রী প্রজাপতয়ে নমঃ ॥</span></p>
+      <h2 class="h2 rv" style="--d:.06s"><span class="en">The formal <em>invitation</em></span><span class="bn"><em>নিমন্ত্রণ</em></span></h2>
+      <div class="letter rv" style="--d:.12s">
+        <p class="letter-salut">
+          <span class="en">With all humility, Sir / Madam,</span>
+          <span class="bn">সবিনয় নিবেদন, মহাশয় / মহাশয়া,</span>
+        </p>
+        <p>
+          <span class="en">By the grace of Prajapati himself, at this auspicious and blessed hour, and with the sacred mantra &ldquo;sadrisham hridayam samam hridayam tava&rdquo; as our witness, the wedding of Kalyaniya Susmita Basak, the younger daughter of Sri Ratan Kumar Basak and Smt. Suchitra Basak, to Kalyaniya Rohit Mukherjee, the only son of Sri Subhankar Mukherjee and Smt. Jaishree Mukherjee, will be solemnised on Saturday evening, the 19th of Agrahayan 1433 - 5 December 2026.</span>
+          <span class="bn">প্রজাপতি স্বয়ং আশীর্বাদে মঙ্গলময় ও মাঙ্গলিক এই শুভ মুহূর্তে &ldquo;সদৃশং হৃদয়ং সমং হৃদয়ং তব&rdquo; এই পবিত্র মন্ত্রকে সাক্ষী রেখে আগামী ১৯শে অগ্রহায়ণ ১৪৩৩ (ইং ৫ই ডিসেম্বর ২০২৬), শনিবার সন্ধ্যায় শ্রী রতন কুমার বসাক ও শ্রীমতী সুচিত্রা বসাকের কনিষ্ঠা কন্যা কল্যাণীয়া সুস্মিতা বসাকের সহিত শ্রী শুভঙ্কর মুখার্জী ও শ্রীমতী জয়শ্রী মুখার্জীর একমাত্র পুত্র কল্যাণীয় রোহিত মুখার্জীর শুভ পরিণয় অনুষ্ঠান সম্পন্ন হবে।</span>
+        </p>
+        <p>
+          <span class="en">On this happy occasion we warmly invite you, on that day, to the wedding assembly at &ldquo;Shri Krishna Banquet Hall&rdquo;, Kestopur, Kolkata. May your presence and your heartfelt blessings make this joyous occasion complete and auspicious - that is our earnest wish.</span>
+          <span class="bn">এই শুভ উপলক্ষে উক্ত দিনে &ldquo;শ্রী কৃষ্ণ ব্যাঙ্কোয়েট হল&rdquo;, কেষ্টপুর, কলকাতা-য় অনুষ্ঠিত বিবাহ আসরে আপনাকে সাদর আমন্ত্রণ জানাই। আপনার শুভাগমন ও আন্তরিক আশীর্বাদে আমাদের এই আনন্দময় অনুষ্ঠান সার্থক ও মঙ্গলময় হয়ে উঠুক, এই আমাদের একান্ত কামনা।</span>
+        </p>
+        <p class="letter-plea">
+          <span class="en">You are sincerely requested to attend, together with your family.</span>
+          <span class="bn">পত্নীসহ নিমন্ত্রণের আন্তরিক প্রার্থনা।</span>
+        </p>
+        <div class="letter-sign">
+          <p class="letter-lab"><span class="en">Yours sincerely</span><span class="bn">বিনীত</span></p>
+          <p class="letter-nm">
+            <span class="en">Sri Ratan Kumar Basak<br>Smt. Suchitra Basak<br>Sri Shibir Basak</span>
+            <span class="bn">শ্রী রতন কুমার বসাক<br>শ্রীমতী সুচিত্রা বসাক<br>শ্রী শিবির বসাক</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSING -->
+  <section class="closing">
+    <div class="wrap">
+      <svg class="orn rv" viewBox="0 0 240 26" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round">
+        <path d="M0 14 H 86"/><path d="M154 14 H 240"/>
+        <path d="M120 4 C132 9, 132 17, 120 22 C108 17, 108 9, 120 4 Z"/>
+        <circle cx="100" cy="14" r="2"/><circle cx="140" cy="14" r="2"/>
+      </svg>
+      <p class="lede rv" style="--d:.06s">
+        <span class="en">Your presence will be our blessing, and your blessings our greatest joy. Please come, and stay for dinner.</span>
+        <span class="bn">আপনার উপস্থিতিই আমাদের আশীর্বাদ, আর আপনার আশীর্বাদই আমাদের সবচেয়ে বড় প্রাপ্তি। অবশ্যই আসবেন, আর নৈশভোজ সেরে যাবেন।</span>
+      </p>
+      <p class="closing-hash rv" style="--d:.14s"><span class="hash">#</span>SuRo</p>
+      <p class="closing-foot rv" style="--d:.2s">
+        <span class="en">With love and respect &middot; The Basak Family</span>
+        <span class="bn">ভালোবাসা ও শ্রদ্ধা সহ &middot; বসাক পরিবার</span>
+      </p>
+    </div>
+  </section>
+</main>
+
+<script>
+(function(){
+  'use strict';
+  var root=document.documentElement;
+  root.classList.remove('no-js');
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function save(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+  function each(sel,fn){Array.prototype.forEach.call(document.querySelectorAll(sel),fn)}
+
+  /* ---------- the graceful morph used by palette and light/dark ----------
+     A soft wash rises, the change is applied under it, every colour on the
+     page eases to its new value over about a second, then the wash clears. */
+  var wash=document.getElementById('wash');
+  var morphTimer=null,morphBusy=false;
+  function morph(apply){
+    if(reduce){apply();paintPetals();paintIntroBg();return}
+    if(morphBusy)return;
+    morphBusy=true;
+    root.classList.add('theming');
+    wash.classList.add('on');
+    setTimeout(function(){
+      apply();
+      paintPetals();paintIntroBg();              /* repainted while the wash hides the swap */
+    },260);
+    setTimeout(function(){wash.classList.remove('on')},760);
+    clearTimeout(morphTimer);
+    morphTimer=setTimeout(function(){
+      root.classList.remove('theming');
+      morphBusy=false;
+    },1800);
+  }
+
+  /* ---------- palette: one toggle, persists ---------- */
+  function syncPaletteButtons(){
+    var mauve=root.getAttribute('data-palette')==='mauve';
+    var bn=root.getAttribute('data-lang')==='bn';
+    var label=mauve
+      ? (bn?'বাঙালি রঙে ফিরে যান':'Switch to the Bengali look')
+      : (bn?'মভ রঙে দেখুন':'Switch to the mauve look');
+    each('[data-palette-btn]',function(b){
+      b.setAttribute('title',label);
+      b.setAttribute('aria-label',label);
+    });
+  }
+  each('[data-palette-btn]',function(btn){
+    btn.addEventListener('click',function(){
+      var goingMauve=root.getAttribute('data-palette')!=='mauve';
+      morph(function(){
+        if(goingMauve)root.setAttribute('data-palette','mauve');
+        else root.removeAttribute('data-palette');
+        save('suro-palette',goingMauve?'mauve':'bengali');
+        syncPaletteButtons();
+      });
+    });
+  });
+  syncPaletteButtons();
+
+  /* ---------- light / dark (persists, independent of palette) ---------- */
+  /* The buttons are symbols only, so their label lives in title + aria-label
+     and has to track both the current mode and the current language. */
+  function syncModeLabel(){
+    var dark=root.getAttribute('data-theme')==='dark';
+    var bn=root.getAttribute('data-lang')==='bn';
+    var mode=bn?(dark?'আলোয় দেখুন':'অন্ধকারে দেখুন'):(dark?'Switch to light':'Switch to dark');
+    each('[data-mode-btn]',function(b){b.setAttribute('title',mode);b.setAttribute('aria-label',mode)});
+    var lang=bn?'View in English':'বাংলায় দেখুন / Switch to Bengali';
+    each('[data-lang-btn]',function(b){b.setAttribute('title',lang);b.setAttribute('aria-label',lang)});
+    if(window.__paintSound)window.__paintSound();
+    if(window.__paintViz)window.__paintViz();
+  }
+  function applyMode(){
+    var dark=root.getAttribute('data-theme')==='dark';
+    if(dark)root.removeAttribute('data-theme');
+    else root.setAttribute('data-theme','dark');
+    save('suro-theme',dark?'light':'dark');
+    syncModeLabel();
+  }
+
+  /* Where the bloom starts: the SuRo monogram if one is on screen,
+     otherwise the button that was pressed. */
+  var spread=document.getElementById('spread');
+  function bloomOrigin(btn){
+    var marks=[];
+    if(!intro.classList.contains('leaving'))marks.push(document.getElementById('startBtn'));
+    marks.push(document.querySelector('.closing-hash'));
+    for(var i=0;i<marks.length;i++){
+      var m=marks[i];
+      if(!m)continue;
+      var r=m.getBoundingClientRect();
+      if(r.width>0&&r.bottom>0&&r.top<window.innerHeight){
+        return {x:r.left+r.width/2,y:r.top+r.height/2};
+      }
+    }
+    var b=btn.getBoundingClientRect();
+    return {x:b.left+b.width/2,y:b.top+b.height/2};
+  }
+
+  each('[data-mode-btn]',function(btn){
+    btn.addEventListener('click',function(){
+      if(reduce){applyMode();paintPetals();paintIntroBg();return}
+      if(morphBusy)return;
+      morphBusy=true;
+
+      /* Read the incoming background without ever painting it.
+         Read the custom property off the root, not body's background:
+         body's background is mid-transition and would report the old colour. */
+      var goingDark=root.getAttribute('data-theme')!=='dark';
+      if(goingDark)root.setAttribute('data-theme','dark');
+      else root.removeAttribute('data-theme');
+      var incoming=getComputedStyle(root).getPropertyValue('--bg').trim();
+      if(goingDark)root.removeAttribute('data-theme');
+      else root.setAttribute('data-theme','dark');
+
+      var o=bloomOrigin(btn);
+      var w=window.innerWidth,h=window.innerHeight;
+      /* Farthest corner from the origin. The mask is opaque to 58% of the
+         gradient's extent, which for a circle gradient is R*sqrt(2), so the
+         solid core reaches 0.82*R. 1.5x the corner distance leaves the whole
+         viewport inside the solid core before we swap. */
+      var corner=Math.max(
+        Math.sqrt(o.x*o.x+o.y*o.y),
+        Math.sqrt((w-o.x)*(w-o.x)+o.y*o.y),
+        Math.sqrt(o.x*o.x+(h-o.y)*(h-o.y)),
+        Math.sqrt((w-o.x)*(w-o.x)+(h-o.y)*(h-o.y))
+      );
+      var R=corner*1.5;
+
+      spread.style.left=o.x+'px';
+      spread.style.top=o.y+'px';
+      spread.style.width=(R*2)+'px';
+      spread.style.height=(R*2)+'px';
+      spread.style.background=incoming;
+      spread.classList.remove('go','clear');
+      void spread.offsetWidth;                 /* reflow so it starts from scale(0) */
+      spread.classList.add('go');
+
+      /* Swap with the screen fully covered, and with every transition off, so
+         the page is already finished underneath before the disc clears. */
+      setTimeout(function(){
+        root.classList.add('instant');
+        applyMode();
+        paintPetals();paintIntroBg();
+        void document.body.offsetHeight;       /* commit before transitions return */
+      },900);
+      setTimeout(function(){spread.classList.add('clear')},1160);
+      setTimeout(function(){
+        spread.classList.remove('go','clear');
+        root.classList.remove('instant');
+        morphBusy=false;
+      },1850);
+    });
+  });
+  syncModeLabel();
+
+  /* ---------- language (always starts English) ----------
+     The page dissolves, the script is swapped while it is invisible,
+     then it reforms. Roughly 1.5s end to end. */
+  var langBusy=false;
+  function swapLang(){
+    var bn=root.getAttribute('data-lang')==='bn';
+    root.setAttribute('data-lang',bn?'en':'bn');
+    root.setAttribute('lang',bn?'en':'bn');
+    syncModeLabel();
+    syncPaletteButtons();
+  }
+  each('[data-lang-btn]',function(btn){
+    btn.addEventListener('click',function(){
+      if(reduce){swapLang();return}
+      if(langBusy)return;
+      langBusy=true;
+      root.classList.add('lang-switching');
+      setTimeout(function(){
+        swapLang();
+        setTimeout(function(){
+          root.classList.remove('lang-switching');
+          setTimeout(function(){langBusy=false},850);
+        },80);
+      },660);
+    });
+  });
+
+  /* ---------- intro -> 2s alpona veil -> invitation ---------- */
+  var intro=document.getElementById('intro');
+  var veil=document.getElementById('veil');
+  var invite=document.getElementById('invite');
+  var started=false;
+
+  /* ink spreading from wherever the finger landed, so the press is confirmed */
+  document.getElementById('startBtn').addEventListener('pointerdown',function(e){
+    if(reduce)return;
+    var box=this.getBoundingClientRect();
+    var ink=document.createElement('span');
+    ink.className='press-ink';
+    ink.style.left=(e.clientX-box.left)+'px';
+    ink.style.top=(e.clientY-box.top)+'px';
+    this.appendChild(ink);
+    setTimeout(function(){ink.remove()},650);
+  });
+
+  /* ---------- the song ----------
+     Kicked off inside the #SuRo click handler. Browsers only allow audio that
+     a user gesture asked for, and the call has to happen in the handler itself
+     - starting it from a later setTimeout is treated as unprompted and blocked.
+     It still returns a promise that can reject (silent mode on iOS, a data
+     saver, an autoplay block), so nothing downstream may depend on it. */
+  var song=document.getElementById('song'),
+      soundBtn=document.getElementById('soundBtn'),
+      TARGET_VOL=0.55, fadeTimer=null, songOn=true;
+
+  function fadeTo(to,ms){
+    clearInterval(fadeTimer);
+    var from=song.volume, steps=Math.max(1,Math.round(ms/50)), i=0;
+    fadeTimer=setInterval(function(){
+      i++;
+      var v=from+(to-from)*(i/steps);
+      song.volume=Math.min(1,Math.max(0,v));
+      if(i>=steps){
+        clearInterval(fadeTimer);
+        if(to===0)song.pause();
+      }
+    },50);
+  }
+
+  function paintSound(){
+    soundBtn.classList.toggle('is-on',songOn);
+    soundBtn.classList.toggle('is-off',!songOn);
+    soundBtn.setAttribute('aria-pressed',songOn?'true':'false');
+    var t=songOn?(root.getAttribute('data-lang')==='bn'?'গান বন্ধ করুন':'Turn the music off')
+                :(root.getAttribute('data-lang')==='bn'?'গান চালু করুন':'Turn the music on');
+    soundBtn.setAttribute('title',t);
+    soundBtn.setAttribute('aria-label',t);
+  }
+
+  /* ---------- the ribbon visualiser ----------
+     An analyser tapped off the song. Two things matter here:
+     1. createMediaElementSource can only ever be called once for an element,
+        so it is guarded and never re-run.
+     2. Once the element is routed into Web Audio its sound ONLY leaves through
+        the graph - miss the connect to destination and the song goes silent
+        while everything still looks correct. */
+  var viz={ctx:null,an:null,bins:null,raf:0,quiet:0};
+
+  var waveWrap=document.getElementById('waveWrap'),
+      waveCv=document.getElementById('wave'), waveCx=null,
+      BANDS=9, level=[], target=[];
+  for(var q=0;q<BANDS;q++){level.push(0);target.push(0)}
+
+  function waveSize(){
+    if(!waveCv)return;
+    var dpr=Math.min(window.devicePixelRatio||1,2);
+    var r=waveCv.getBoundingClientRect();
+    if(!r.width)return;
+    waveCv.width=Math.round(r.width*dpr);
+    waveCv.height=Math.round(r.height*dpr);
+    waveCx=waveCv.getContext('2d');
+    waveCx.setTransform(dpr,0,0,dpr,0,0);
+    viz.w=r.width; viz.h=r.height;
+  }
+  window.addEventListener('resize',function(){clearTimeout(viz.rs);viz.rs=setTimeout(waveSize,180)});
+
+  /* auto-gain: the floor creeps up, the ceiling creeps down, and both snap
+     outward the instant the music passes them. Measured on this song the bass
+     only travels between about 0.79 and 0.91 - a narrow band sitting high - so
+     a fixed gain just pins it flat. This stretches whatever range is actually
+     playing across the full swing. */
+  function vizNorm(k,v){
+    var f=k+'F',c=k+'C';
+    viz[f]=viz[f]===undefined?v:Math.min(v,viz[f]+0.0012);
+    viz[c]=viz[c]===undefined?v:Math.max(v,viz[c]-0.0012);
+    var span=viz[c]-viz[f];
+    if(span<0.03)return 0.2;
+    var n=(v-viz[f])/span;
+    return n<0?0:n>1?1:n;
+  }
+
+  /* a hand-rolled ease so the curve settles rather than twitches at 60fps */
+  function drawWave(t){
+    if(!waveCx)return;
+    var w=viz.w,h=viz.h,mid=h*0.72,i,x,y;
+    waveCx.clearRect(0,0,w,h);
+    var peak=0;
+    for(i=0;i<BANDS;i++){
+      level[i]+=(target[i]-level[i])*0.14;
+      if(level[i]>peak)peak=level[i];
+    }
+    /* The excursion is normalised to 0..1 first and the amplitude is then set
+       to exactly the room available, so a loud passage can reach the top of the
+       strip but never punch into the ribbon or clip against the edge. The 11px
+       held back is wider than the 6px bloom, so even the halo stays clear -
+       at 5px the glow was reaching the ribbon on desktop, where the curve
+       peaks higher across a wider strip. */
+    var amp=mid-11;
+    var pts=[];
+    for(i=0;i<BANDS;i++){
+      x=(i/(BANDS-1))*w;
+      /* two slow sines out of step keep it breathing between beats rather
+         than snapping rigid when a bar holds */
+      var drift=Math.sin(t/1250+i*1.15)*0.22+Math.sin(t/2100+i*1.9)*0.14;
+      var e=level[i]*0.80+drift*(0.22+level[i]*0.42)+0.09;
+      e=e<0?0:e>1?1:e;
+      y=mid-e*amp;
+      pts.push([x,y]);
+    }
+    function curve(off,alpha,width,col){
+      waveCx.beginPath();
+      waveCx.moveTo(pts[0][0],pts[0][1]+off);
+      for(i=0;i<pts.length-1;i++){
+        var a=pts[i],b2=pts[i+1];
+        var cx=(a[0]+b2[0])/2;
+        waveCx.bezierCurveTo(cx,a[1]+off,cx,b2[1]+off,b2[0],b2[1]+off);
+      }
+      waveCx.globalAlpha=alpha;
+      waveCx.lineWidth=width;
+      waveCx.strokeStyle=col;
+      waveCx.lineCap='round';
+      waveCx.stroke();
+    }
+    var gold=viz.gold||'#e6c273', rose=viz.rose||'#e8807b';
+    /* three passes: a wide soft bloom, a mid body, a fine bright core */
+    waveCx.filter='blur(6px)';  curve(0,0.30*(0.35+peak),9,rose);
+    waveCx.filter='blur(2.5px)';curve(0,0.42*(0.4+peak),4,gold);
+    waveCx.filter='none';       curve(0,0.55*(0.35+peak),1.25,gold);
+    /* its reflection, fainter, so the glow reads as light on cloth */
+    waveCx.filter='blur(4px)';
+    waveCx.save(); waveCx.translate(0,mid*2); waveCx.scale(1,-1);
+    curve(0,0.13*(0.3+peak),5,rose);
+    waveCx.restore();
+    waveCx.filter='none'; waveCx.globalAlpha=1;
+  }
+
+  function vizLoop(ts){
+    viz.raf=requestAnimationFrame(vizLoop);
+    if(!viz.an)return;
+    viz.an.getByteFrequencyData(viz.bins);
+    var b=viz.bins,i,sum=0;
+    for(i=0;i<b.length;i++)sum+=b[i];
+    /* A silent stretch means the song is off, or iOS is muted by the ring
+       switch - the analyser reads zeros either way and cannot tell the two
+       apart. Roughly half a second of nothing fades the glow out. */
+    if(song.paused||sum===0){
+      if(++viz.quiet>30){
+        if(waveWrap)waveWrap.classList.remove('lit');
+        for(i=0;i<BANDS;i++)target[i]=0;
+      }
+    }else{
+      viz.quiet=0;
+      if(waveWrap&&!waveWrap.classList.contains('lit'))waveWrap.classList.add('lit');
+      /* nine bands spread across the audible range, low notes on the outside
+         so the curve swells from the middle */
+        var pick=[1,2,4,6,8,11,14,18,24];
+      for(i=0;i<BANDS;i++){
+        var v=vizNorm('b'+i,b[pick[i]]/255);
+        var k=Math.abs(i-(BANDS-1)/2)/((BANDS-1)/2);
+        target[i]=v*(1-k*0.28);
+      }
+    }
+    drawWave(ts||0);
+  }
+
+  /* Off by default, so the song is NOT routed through Web Audio until it is
+     asked for. That matters: the moment an element is tapped for analysis its
+     sound only leaves through the graph, and that is a needless risk to take
+     with the music for a guest who never turns the visuals on. */
+  var vizOn=false, vizBtn=document.getElementById('vizBtn');
+
+  function paintViz(){
+    if(!vizBtn)return;
+    vizBtn.classList.toggle('is-on',vizOn);
+    vizBtn.classList.toggle('is-off',!vizOn);
+    vizBtn.setAttribute('aria-pressed',vizOn?'true':'false');
+    var bn=root.getAttribute('data-lang')==='bn';
+    var t=vizOn?(bn?'সুরের ঢেউ লুকান':'Hide the music')
+               :(bn?'সুরের ঢেউ দেখুন':'Show the music');
+    vizBtn.setAttribute('title',t);
+    vizBtn.setAttribute('aria-label',t);
+    if(waveWrap)waveWrap.classList.toggle('open',vizOn);
+  }
+
+  function vizStop(){
+    cancelAnimationFrame(viz.raf); viz.raf=0;
+    if(waveWrap)waveWrap.classList.remove('lit');
+    for(var vi=0;vi<BANDS;vi++){target[vi]=0;level[vi]=0}
+    if(waveCx)waveCx.clearRect(0,0,viz.w||0,viz.h||0);
+  }
+
+  if(vizBtn){
+    vizBtn.addEventListener('click',function(){
+      vizOn=!vizOn;
+      paintViz();
+      save('suro-viz',vizOn?'on':'off');
+      if(vizOn){startViz()}
+      /* let the strip finish collapsing before the canvas is wiped, so it
+         closes gracefully rather than emptying and then shrinking */
+      else{setTimeout(vizStop,820)}
+    });
+    try{ if(localStorage.getItem('suro-viz')==='on')vizOn=true; }catch(e){}
+    paintViz();
+  }
+
+  function startViz(){
+    if(!vizOn||reduce||!waveCv)return;
+    if(viz.ctx){                        /* already routed - just resume drawing */
+      if(viz.ctx.state==='suspended')viz.ctx.resume();
+      waveSize();
+      cancelAnimationFrame(viz.raf);vizLoop();
+      return;
+    }
+    var AC=window.AudioContext||window.webkitAudioContext;
+    if(!AC)return;
+    try{
+      viz.ctx=new AC();
+      var src=viz.ctx.createMediaElementSource(song);
+      viz.an=viz.ctx.createAnalyser();
+      viz.an.fftSize=64;viz.an.smoothingTimeConstant=.78;
+      src.connect(viz.an);
+      viz.an.connect(viz.ctx.destination);
+      viz.bins=new Uint8Array(viz.an.frequencyBinCount);
+    }catch(e){
+      /* no visualiser rather than no music */
+      viz.ctx=null;viz.an=null;
+      if(waveWrap)waveWrap.remove();
+      return;
+    }
+    if(viz.ctx.state==='suspended'){var r=viz.ctx.resume();if(r&&r.catch)r.catch(function(){})}
+    /* the palette can change under us, so read the theme colours live */
+    var cs=getComputedStyle(root);
+    viz.gold=cs.getPropertyValue('--gold').trim()||'#e6c273';
+    viz.rose=cs.getPropertyValue('--accent').trim()||'#e8807b';
+    waveSize();
+    cancelAnimationFrame(viz.raf);
+    vizLoop();
+  }
+
+  /* Once the song has been routed through Web Audio - which happens the first
+     time the visuals are switched on - its sound ONLY reaches the speakers
+     through that graph. Browsers suspend an AudioContext whenever the tab goes
+     away, and a suspended context means the element plays on with nothing
+     audible. So every place the song starts has to wake it, whether the visuals
+     are on or off. Tying this to the visuals was the bug: turn them on once,
+     switch tabs, and the music came back silent. */
+  function wakeAudio(){
+    if(viz.ctx&&viz.ctx.state==='suspended'){
+      var r=viz.ctx.resume(); if(r&&r.catch)r.catch(function(){});
+    }
+  }
+
+  function startSong(){
+    song.volume=0;
+    wakeAudio();
+    var pr=song.play();
+    if(pr&&pr.catch)pr.catch(function(){
+      /* blocked - the toggle is left showing "off" so a tap can start it */
+      songOn=false;paintSound();
+    });
+    fadeTo(TARGET_VOL,1800);
+    startViz();
+  }
+
+  soundBtn.addEventListener('click',function(){
+    songOn=!songOn;
+    paintSound();
+    save('suro-song',songOn?'on':'off');
+    if(songOn){
+      wakeAudio();
+      var pr=song.play();
+      if(pr&&pr.catch)pr.catch(function(){songOn=false;paintSound()});
+      fadeTo(TARGET_VOL,900);
+      startViz();
+    }else{
+      fadeTo(0,700);
+    }
+  });
+
+  /* a returning guest who turned it off should not be given it again */
+  try{ if(localStorage.getItem('suro-song')==='off')songOn=false; }catch(e){}
+  window.__paintSound=paintSound;
+  window.__paintViz=paintViz;
+  paintSound();
+
+  /* Leaving the tab should not leave music playing behind it. */
+  document.addEventListener('visibilitychange',function(){
+    if(!started||!songOn)return;
+    if(document.hidden){
+      clearInterval(fadeTimer);song.pause();
+      cancelAnimationFrame(viz.raf);            /* no point animating offscreen */
+      if(waveWrap)waveWrap.classList.remove('lit');
+    }else{
+      wakeAudio();
+      var pr=song.play();if(pr&&pr.catch)pr.catch(function(){});
+      if(vizOn&&viz.an){viz.quiet=0;cancelAnimationFrame(viz.raf);vizLoop()}
+    }
+  });
+
+  document.getElementById('startBtn').addEventListener('click',function(){
+    if(started)return;
+    started=true;
+    if(songOn)startSong();
+    intro.classList.add('leaving');
+    veil.classList.add('on');
+    if(reduce){
+      setTimeout(function(){
+        invite.classList.add('on'); window.scrollTo(0,0);
+        veil.classList.add('done'); observeAll();
+      },300);
+      return;
+    }
+    /* The invitation is put in place BEFORE the drape parts, so the curtains
+       open onto something. Revealing it when the veil clears would mean the
+       drapes part onto an empty background. */
+    setTimeout(function(){
+      invite.classList.add('on');
+      window.scrollTo(0,0);
+      observeAll();
+    },1350);
+    setTimeout(function(){ veil.classList.add('done') },2800);
+  });
+
+  /* ---------- scroll reveal ---------- */
+  var io=null;
+  function observeAll(){
+    var items=document.querySelectorAll('.rv:not(.in)');
+    if(reduce||!('IntersectionObserver' in window)){
+      Array.prototype.forEach.call(items,function(el){el.classList.add('in')});
+      return;
+    }
+    if(!io){
+      io=new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+          if(!e.isIntersecting)return;
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        });
+      },{rootMargin:'0px 0px -6% 0px',threshold:.1});
+    }
+    Array.prototype.forEach.call(items,function(el){io.observe(el)});
+  }
+
+  /* ---------- intro background: sindoor dust + jaba blooms ---------- */
+  function paintIntroBg(){
+    if(reduce)return;
+    var cs=getComputedStyle(root);
+    var rose=cs.getPropertyValue('--rose-a').trim();
+
+    /* sindoor dust rising against the falling flowers */
+    var bg=document.getElementById('introBg');
+    if(!bg)return;
+    Array.prototype.forEach.call(bg.querySelectorAll('.dust'),function(d){d.remove()});
+    for(var i=0;i<16;i++){
+      var d=document.createElement('div');
+      d.className='dust';
+      var s=1.5+Math.random()*3;
+      d.style.cssText='left:'+(Math.random()*100)+'%;width:'+s+'px;height:'+s+'px;'+
+        'background:rgba('+rose+','+(0.35+Math.random()*0.35).toFixed(2)+');'+
+        'animation-duration:'+(20+Math.random()*20)+'s;animation-delay:'+(Math.random()*26)+'s;';
+      bg.appendChild(d);
+    }
+
+    /* jaba opening and fading, reusing the same flower drawing */
+    Array.prototype.forEach.call(bg.querySelectorAll('.bloom'),function(b){
+      b.innerHTML=flower('jaba',cs);
+    });
+  }
+
+  /* ---------- tap reactions on the lamps and Ganesha ----------
+     Each tap picks a random reaction. Guarded so a tap cannot fire once the
+     opening sequence has started, and so repeat taps restart cleanly. */
+  (function(){
+    if(reduce)return;
+
+    function restart(el,cls,ms){
+      el.classList.remove(cls);
+      void el.offsetWidth;                 /* forces the animation to restart */
+      el.classList.add(cls);
+      setTimeout(function(){el.classList.remove(cls)},ms);
+    }
+    function spawn(host,cls,count,build){
+      for(var i=0;i<count;i++){
+        var n=document.createElement('span');
+        n.className=cls;
+        build(n,i);
+        host.appendChild(n);
+        (function(node){setTimeout(function(){node.remove()},1700)})(n);
+      }
+    }
+
+    /* --- the four lamps --- */
+    var LAMP=['flare','swing','relight','ring','petals'];
+    function lampReact(el){
+      var kind=LAMP[Math.floor(Math.random()*LAMP.length)];
+      /* every tap flares and throws embers; the random pick decides what
+         happens on top of that, so no tap ever feels like nothing happened */
+      restart(el,'r-flare',1010);
+      spawn(el,'flash',1,function(){});
+      spawn(el,'ember',12,function(n){
+        n.style.setProperty('--ex',(Math.random()*74-37).toFixed(0)+'px');
+        n.style.setProperty('--ey',(-46-Math.random()*46).toFixed(0)+'px');
+        n.style.animationDelay=(Math.random()*.2).toFixed(2)+'s';
+      });
+      if(kind==='flare'){
+        spawn(el,'tap-ring',1,function(){});
+      } else if(kind==='swing'){
+        restart(el,'r-swing',1210);
+      } else if(kind==='relight'){
+        restart(el,'r-relight',1560);
+      } else if(kind==='ring'){
+        spawn(el,'tap-ring',2,function(n,i){n.style.animationDelay=(i*.16)+'s'});
+      } else {
+        var cs=getComputedStyle(root);
+        spawn(el,'tap-petal',9,function(n,i){
+          n.style.setProperty('--ex',(Math.random()*84-42).toFixed(0)+'px');
+          n.style.setProperty('--ey',(46+Math.random()*34).toFixed(0)+'px');
+          n.style.animationDelay=(i*.06).toFixed(2)+'s';
+          n.innerHTML=flower(Math.random()<.5?'marigold':'jaba',cs);
+        });
+      }
+    }
+
+    /* --- Ganesha --- */
+    var GAN=['wiggle','bless','modak','ears','bounce'];
+    var gan=document.querySelector('.ganesha');
+    var ganWrap=document.getElementById('ganTap');
+    function ganReact(){
+      var kind=GAN[Math.floor(Math.random()*GAN.length)];
+      /* the blessing light fires on every tap, whatever else is picked */
+      spawn(ganWrap,'gan-glow',1,function(){});
+      spawn(ganWrap,'gan-spark',12,function(n,i){
+        var a=(Math.PI*2/12)*i+Math.random()*.4, r=44+Math.random()*30;
+        n.style.setProperty('--ex',(Math.cos(a)*r).toFixed(0)+'px');
+        n.style.setProperty('--ey',(Math.sin(a)*r).toFixed(0)+'px');
+        n.style.animationDelay=(i*.025).toFixed(2)+'s';
+      });
+      if(kind==='wiggle'||kind==='bless'){
+        restart(gan,'g-wiggle',1210);
+        spawn(ganWrap,'gan-spark',6,function(n,i){
+          var a=(Math.PI*2/6)*i+Math.random()*.6, r=34+Math.random()*16;
+          n.style.setProperty('--ex',(Math.cos(a)*r).toFixed(0)+'px');
+          n.style.setProperty('--ey',(Math.sin(a)*r).toFixed(0)+'px');
+          n.style.animationDelay=(i*.04).toFixed(2)+'s';
+        });
+      } else if(kind==='ears'){
+        restart(gan,'g-ears',900);
+      } else if(kind==='bounce'){
+        restart(gan,'g-bounce',900);
+      } else {
+        spawn(ganWrap,'gan-modak',1,function(n){
+          n.innerHTML='<svg viewBox="0 0 28 28">'+
+            '<path d="M14 2 C17 8 22 14 24 21 C24 24.5 19.5 26 14 26 C8.5 26 4 24.5 4 21 C6 14 11 8 14 2 Z"'+
+            ' fill="#e8c07a" stroke="#8a5a1e" stroke-width="1"/>'+
+            '<path d="M6.5 21 H21.5" stroke="#8a5a1e" stroke-width="1" opacity=".7"/>'+
+            '<path d="M14 3 V20" stroke="#c99a4a" stroke-width=".8" opacity=".6"/></svg>';
+        });
+        restart(gan,'g-bounce',900);
+      }
+    }
+
+    /* --- wiring --- */
+    function bind(el,fn){
+      el.addEventListener('click',function(e){
+        if(started)return;                 /* opening sequence has begun */
+        e.stopPropagation();
+        fn(el);
+      });
+    }
+    Array.prototype.forEach.call(document.querySelectorAll('.diya,.hdiya'),function(l){
+      bind(l,lampReact);
+    });
+    /* idle: a small ear flap every 1.4-3.2s, skipped while a reaction or the
+       opening sequence is running so the two never fight over the ears */
+    (function idleFlap(){
+      if(!gan)return;
+      setTimeout(function(){
+        if(!started && !gan.classList.contains('g-ears')
+           && !gan.classList.contains('g-bounce')){
+          gan.classList.add('g-idleflap');
+          setTimeout(function(){gan.classList.remove('g-idleflap')},820);
+        }
+        idleFlap();
+      },1400+Math.random()*1800);
+    })();
+
+    if(ganWrap){
+      bind(ganWrap,function(){ganReact()});
+      ganWrap.addEventListener('keydown',function(e){
+        if(started)return;
+        if(e.key==='Enter'||e.key===' '){e.preventDefault();ganReact()}
+      });
+    }
+  })();
+
+  /* ---------- the marigold swag across the top of the drape ----------
+     Built at the live viewport width so the marigolds stay round; a fixed
+     viewBox stretched to fit would squash them into ellipses. */
+  function buildSwag(){
+    var host=document.getElementById('veilSwag');
+    if(!host)return;
+    var w=Math.max(320,window.innerWidth), h=74, sag=34, step=34;
+    function ropeY(x){return 5+sag*Math.sin(Math.PI*x/w)}
+    var path='M0 5';
+    for(var x=12;x<=w;x+=12)path+=' L'+x+' '+ropeY(x).toFixed(1);
+    var n=Math.floor(w/step), pad=(w-n*step)/2;
+    var s='<svg viewBox="0 0 '+w+' '+h+'" width="'+w+'" height="'+h+'">'+
+      '<path d="'+path+'" fill="none" stroke="#9aad6a" stroke-width="1.8" opacity=".75"/>'+
+      '<path d="'+path+'" fill="none" stroke="var(--gold)" stroke-width=".9" opacity=".5" transform="translate(0,4)"/>';
+    for(var i=0;i<=n;i++){
+      var cx=+(i*step+pad).toFixed(1), y=+ropeY(cx).toFixed(1);
+      if(i%2===0){
+        s+='<circle cx="'+cx+'" cy="'+(y+11)+'" r="7" fill="#e8a33a"/>'+
+           '<circle cx="'+cx+'" cy="'+(y+11)+'" r="3.2" fill="#c9591b" opacity=".8"/>';
+      }else{
+        s+='<path d="M'+cx+' '+(y+4)+' C'+(cx-6)+' '+(y+13)+' '+(cx-6)+' '+(y+23)+' '+cx+' '+(y+30)+
+           ' C'+(cx+6)+' '+(y+23)+' '+(cx+6)+' '+(y+13)+' '+cx+' '+(y+4)+' Z" fill="#9aad6a" opacity=".8"/>';
+      }
+    }
+    host.innerHTML=s+'</svg>';
+  }
+  buildSwag();
+  var swagTimer=null;
+  window.addEventListener('resize',function(){
+    clearTimeout(swagTimer); swagTimer=setTimeout(buildSwag,180);
+  });
+
+  /* ---------- centre the rotating alpona on the seal ----------
+     Sized to the clear gap between the Ganesha group above and the invite
+     lines below, so the seal is the only thing inside the ring. */
+  function fitAlponaToSeal(){
+    var a=document.querySelector('.intro-alpona');
+    var seal=document.getElementById('startBtn');
+    var intro=document.getElementById('intro');
+    if(!a||!seal||!intro)return;
+    var ib=intro.getBoundingClientRect(), sb=seal.getBoundingClientRect();
+    var cx=sb.left+sb.width/2-ib.left, cy=sb.top+sb.height/2-ib.top;
+
+    var above=document.querySelector('.ganesha');
+    var below=document.querySelector('.intro-lower');
+    var topLimit=above?above.getBoundingClientRect().bottom-ib.top:0;
+    var botLimit=below?below.getBoundingClientRect().top-ib.top:ib.height;
+    /* Centre the ring on the gap between the two text lines rather than on
+       the seal, so it uses the full span instead of being limited by whichever
+       side is tighter. No minimum radius: a floor could only be honoured by
+       overlapping the text, so if the gap is too small the ring hides. */
+    var pad=7;
+    cy=(topLimit+botLimit)/2;
+    var radius=Math.min((botLimit-topLimit)/2-pad, ib.width*0.46);
+    if(radius<52){a.style.display='none';return}
+    a.style.display='';
+
+    a.style.width=(radius*2)+'px';
+    a.style.left=cx+'px';
+    a.style.top=cy+'px';
+    a.style.transform='translate(-50%,-50%)';
+
+    /* the pulse rings swell from the same centre */
+    Array.prototype.forEach.call(document.querySelectorAll('.pulse'),function(p){
+      p.style.left=cx+'px';
+      p.style.top=cy+'px';
+    });
+  }
+  /* Must re-run once webfonts land: they change the seal's size and position,
+     and a ring positioned before that sits off-centre. */
+  fitAlponaToSeal();
+  window.addEventListener('load',fitAlponaToSeal);
+  if(document.fonts&&document.fonts.ready){
+    document.fonts.ready.then(function(){setTimeout(fitAlponaToSeal,80)});
+  }
+  setTimeout(fitAlponaToSeal,1200);
+  var alponaTimer=null;
+  window.addEventListener('resize',function(){
+    clearTimeout(alponaTimer);
+    alponaTimer=setTimeout(fitAlponaToSeal,180);
+  });
+
+  /* ---------- countdown to the wedding ----------
+     Anchored to IST, not the viewer's clock, so a guest abroad sees the same
+     message on the same day as a guest in Kolkata. */
+  (function(){
+    var box=document.getElementById('countdown');
+    if(!box)return;
+    var WED  = new Date('2026-12-05T18:00:00+05:30');
+    var DAY0 = new Date('2026-12-05T00:00:00+05:30');
+    var DAY1 = new Date('2026-12-06T00:00:00+05:30');
+    var counting = box.querySelector('.cd-counting'),
+        today    = box.querySelector('.cd-today'),
+        married  = box.querySelector('.cd-married'),
+        moCell   = document.getElementById('cdMonthCell'),
+        mo = document.getElementById('cdMo'),  da  = document.getElementById('cdDa'),
+        moL= document.getElementById('cdMoL'), daL = document.getElementById('cdDaL');
+
+    function tick(){
+      var now = new Date();
+      if(now >= DAY1){ counting.hidden=true;  today.hidden=true;  married.hidden=false; return }
+      if(now >= DAY0){ counting.hidden=true;  today.hidden=false; married.hidden=true;  return }
+      counting.hidden=false; today.hidden=true; married.hidden=true;
+
+      var months = (WED.getFullYear()-now.getFullYear())*12 + (WED.getMonth()-now.getMonth());
+      var anchor = new Date(now.getTime());
+      anchor.setMonth(anchor.getMonth()+months);
+      if(anchor > WED){ months--; anchor = new Date(now.getTime()); anchor.setMonth(anchor.getMonth()+months); }
+      var days = Math.floor((WED-anchor)/86400000);
+      months = Math.max(0,months); days = Math.max(0,days);
+
+      moCell.hidden = (months === 0);          /* under a month: days alone */
+      mo.textContent = months;
+      da.textContent = days;
+      moL.textContent = (months === 1) ? 'month' : 'months';
+      daL.textContent = (days   === 1) ? 'day'   : 'days';
+    }
+    tick();
+    setInterval(tick, 60000);
+  })();
+
+  /* ---------- toran ----------
+     Built at the real viewport width. A fixed viewBox stretched with
+     preserveAspectRatio would squash the marigolds into ellipses on desktop. */
+  function buildToran(){
+    var host=document.querySelector('.toran');
+    if(!host)return;
+    /* Build to the container's real height so the garland always spans the
+       full width. Scaling a fixed 104-unit viewBox instead would letterbox it
+       (default preserveAspectRatio) or squash the marigolds into ellipses. */
+    var w=Math.max(320,window.innerWidth);
+    var h=Math.round(host.clientHeight)||104, k=h/104;
+    var sag=30*k, step=30;
+    function ropeY(x){return 6*k+sag*Math.sin(Math.PI*x/w)}
+    var d='M0 '+(6*k).toFixed(1);
+    for(var x=12;x<=w;x+=12)d+=' L'+x+' '+ropeY(x).toFixed(1);
+    var n=Math.floor(w/step),pad=(w-n*step)/2;
+    var s='<svg viewBox="0 0 '+w+' '+h+'" width="'+w+'" height="'+h+'">'+
+      '<path d="'+d+'" fill="none" stroke="var(--leaf)" stroke-width="1.6" opacity=".6"/>'+
+      '<path d="'+d+'" fill="none" stroke="var(--gold)" stroke-width=".8" opacity=".4" transform="translate(0,'+(3.5*k).toFixed(1)+')"/>';
+    for(var i=0;i<=n;i++){
+      var cx=+(i*step+pad).toFixed(1),y=+ropeY(cx).toFixed(1);
+      if(i%2===0){
+        s+='<g class="hang"><path d="M'+cx+' '+(y+4*k)+
+           ' C'+(cx-7.5)+' '+(y+17*k)+' '+(cx-7.5)+' '+(y+31*k)+' '+cx+' '+(y+41*k)+
+           ' C'+(cx+7.5)+' '+(y+31*k)+' '+(cx+7.5)+' '+(y+17*k)+' '+cx+' '+(y+4*k)+
+           ' Z" fill="var(--leaf)" opacity=".6"/>'+
+           '<path d="M'+cx+' '+(y+6*k)+' V'+(y+39*k)+'" stroke="var(--bg)" stroke-width=".8" opacity=".45"/></g>';
+      }else{
+        s+='<g class="hang"><path d="M'+cx+' '+(y+3*k)+' V'+(y+8*k)+'" stroke="var(--leaf)" stroke-width="1" opacity=".6"/>'+
+           '<circle cx="'+cx+'" cy="'+(y+15*k)+'" r="'+(7.2*k).toFixed(1)+'" fill="var(--gold)" opacity=".8"/>'+
+           '<circle cx="'+cx+'" cy="'+(y+15*k)+'" r="'+(3.4*k).toFixed(1)+'" fill="var(--accent)" opacity=".42"/></g>';
+      }
+    }
+    host.innerHTML=s+'</svg>';
+  }
+  buildToran();
+  var toranTimer=null;
+  window.addEventListener('resize',function(){
+    clearTimeout(toranTimer);
+    toranTimer=setTimeout(buildToran,180);
+  });
+
+  /* ---------- falling shiuli, marigold and bel leaves ----------
+     Shiuli is the Bengali autumn flower: white petals, orange stem.
+     It needs a faint outline or it disappears against cream paper. */
+  function flower(kind,cs){
+    var gold=cs.getPropertyValue('--gold').trim();
+    var goldL=cs.getPropertyValue('--gold-l').trim();
+    var leaf=cs.getPropertyValue('--leaf').trim();
+    var accent=cs.getPropertyValue('--accent-l').trim();
+    if(kind==='marigold'){
+      return '<svg viewBox="0 0 24 24">'+
+        '<circle cx="12" cy="12" r="10.5" fill="#c9591b"/>'+
+        '<circle cx="12" cy="12" r="7.4" fill="'+gold+'"/>'+
+        '<circle cx="12" cy="12" r="4" fill="'+goldL+'" opacity=".9"/>'+
+        '<circle cx="12" cy="12" r="1.8" fill="'+accent+'"/></svg>';
+    }
+    if(kind==='jaba'){
+      /* red hibiscus - five broad petals and the long protruding stamen */
+      var pet='';
+      for(var j=0;j<5;j++){
+        pet+='<ellipse cx="12" cy="7.4" rx="4.2" ry="4.8" transform="rotate('+(j*72)+' 12 12)"/>';
+      }
+      return '<svg viewBox="0 0 24 24">'+
+        '<g fill="#b3121d" opacity=".92">'+pet+'</g>'+
+        '<circle cx="12" cy="12" r="2.6" fill="#7d0a13"/>'+
+        '<path d="M12 12 L19 19.5" stroke="'+goldL+'" stroke-width="1.1" stroke-linecap="round"/>'+
+        '<circle cx="19.4" cy="19.9" r="1.5" fill="'+goldL+'"/></svg>';
+    }
+    if(kind==='leaf'){
+      return '<svg viewBox="0 0 24 24">'+
+        '<path d="M12 1.5 C19 7 19 17 12 22.5 C5 17 5 7 12 1.5 Z" fill="'+leaf+'" opacity=".8"/>'+
+        '<path d="M12 3 V21" stroke="'+goldL+'" stroke-width="1" opacity=".55"/></svg>';
+    }
+    var pet='';
+    for(var a=0;a<6;a++){
+      pet+='<ellipse cx="12" cy="6.6" rx="3.1" ry="5.4" transform="rotate('+(a*60)+' 12 12)"/>';
+    }
+    return '<svg viewBox="0 0 24 24">'+
+      '<g fill="#fffaf0" stroke="'+goldL+'" stroke-width=".55" opacity=".95">'+pet+'</g>'+
+      '<circle cx="12" cy="12" r="3" fill="#e07b2a"/></svg>';
+  }
+
+  function paintPetals(){
+    if(reduce)return;
+    var box=document.getElementById('petals');
+    var cs=getComputedStyle(root);
+    var kinds=['marigold','marigold','jaba','jaba','jaba','shiuli','shiuli','leaf'];
+    box.innerHTML='';
+    for(var i=0;i<24;i++){
+      var p=document.createElement('div');
+      p.className='petal';
+      var kind=kinds[Math.floor(Math.random()*kinds.length)];
+      var s=(kind==='leaf'?7:9)+Math.random()*10;
+      p.style.cssText='left:'+(Math.random()*100)+'%;width:'+s+'px;height:'+s+'px;'+
+        'animation-duration:'+(17+Math.random()*17)+'s;animation-delay:'+(Math.random()*22)+'s;';
+      p.innerHTML=flower(kind,cs);
+      box.appendChild(p);
+    }
+  }
+  paintPetals();paintIntroBg();
+})();
+</script>
+</body>
+</html>
